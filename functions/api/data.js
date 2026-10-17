@@ -2,8 +2,34 @@
 // Stores the entire Money Manager dataset (entries, mileage, settings,
 // imported_receipts, merchant_rules) as one JSON blob in a single D1 row.
 // Requires a D1 database bound to this Pages project as "DB".
+//
+// Access control: every request must carry the app password in the
+// "x-app-password" header, matching the APP_PASSWORD env var set on the
+// Pages project. Fails closed — no password configured means locked.
 
 const ROW_ID = 1;
+
+function timingSafeEqual(a, b) {
+  if (typeof a !== "string" || typeof b !== "string") return false;
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return diff === 0;
+}
+
+function unauthorized() {
+  return new Response(JSON.stringify({ error: "Unauthorized" }), {
+    status: 401,
+    headers: { "Content-Type": "application/json" },
+  });
+}
+
+function checkAuth(request, env) {
+  const expected = env.APP_PASSWORD;
+  if (!expected) return false;
+  const got = request.headers.get("x-app-password") || "";
+  return timingSafeEqual(got, expected);
+}
 
 async function ensureTable(db) {
   await db.exec(
@@ -11,7 +37,8 @@ async function ensureTable(db) {
   );
 }
 
-export async function onRequestGet({ env }) {
+export async function onRequestGet({ request, env }) {
+  if (!checkAuth(request, env)) return unauthorized();
   try {
     await ensureTable(env.DB);
     const row = await env.DB
@@ -39,7 +66,8 @@ export async function onRequestGet({ env }) {
   }
 }
 
-export async function onRequestPost({ env, request }) {
+export async function onRequestPost({ request, env }) {
+  if (!checkAuth(request, env)) return unauthorized();
   try {
     await ensureTable(env.DB);
     const body = await request.json();

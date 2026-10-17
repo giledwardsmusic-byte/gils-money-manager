@@ -125,9 +125,38 @@ function isTaxPayment(e){return e.type==='expense'&&e.category===TAX_PAY_CAT}
 /* ---- cloud storage layer (replaces IndexedDB so data syncs across every device) ---- */
 let STORE={entries:[],imported_receipts:[],mileage:[],settings:[],merchant_rules:[]};
 let cloudSaveFailed=false;
+/* ---- password gate (app password kept by Muse for Gil) ---- */
+function appPassword(){return sessionStorage.getItem('mm_pw')||'';}
+async function apiFetch(url,opts){
+  opts=opts||{};
+  opts.headers=Object.assign({},opts.headers,{'x-app-password':appPassword()});
+  const r=await fetch(url,opts);
+  if(r.status===401){sessionStorage.removeItem('mm_pw');showPwGate(true);}
+  return r;
+}
+function showPwGate(bad){
+  let ov=document.getElementById('pwGate');
+  if(!ov){
+    ov=document.createElement('div');ov.id='pwGate';
+    ov.style.cssText='position:fixed;inset:0;background:#1a1a2e;display:flex;align-items:center;justify-content:center;z-index:99999;';
+    ov.innerHTML='<div style="background:#fff;padding:32px;border-radius:12px;max-width:320px;text-align:center;font-family:sans-serif;">'+
+      '<h2 style="margin:0 0 8px;">Money Manager</h2>'+
+      '<p id="pwMsg" style="color:#555;">Enter your password to open the app.</p>'+
+      '<input id="pwInput" type="password" style="width:100%;padding:10px;margin:8px 0;box-sizing:border-box;" autocomplete="current-password">'+
+      '<button id="pwGo" style="width:100%;padding:10px;background:#4a6cf7;color:#fff;border:none;border-radius:6px;font-size:16px;">Unlock</button></div>';
+    document.body.appendChild(ov);
+    const go=()=>{const v=document.getElementById('pwInput').value;if(!v)return;sessionStorage.setItem('mm_pw',v);ov.style.display='none';loadStore();};
+    document.getElementById('pwGo').onclick=go;
+    document.getElementById('pwInput').onkeydown=e=>{if(e.key==='Enter')go();};
+  }
+  if(bad){const m=document.getElementById('pwMsg');if(m)m.textContent='Wrong password. Try again.';}
+  ov.style.display='flex';
+  setTimeout(()=>{const i=document.getElementById('pwInput');if(i)i.focus();},60);
+}
 async function loadStore(){
   try{
-    const res=await fetch('/api/data');
+    const res=await apiFetch('/api/data');
+    if(res.status===401)return;
     if(!res.ok)throw new Error('bad response');
     const d=await res.json();
     STORE.entries=d.entries||[];
@@ -145,7 +174,8 @@ let suspendPersist=false;
 async function persistStore(){
   if(suspendPersist)return;
   try{
-    const res=await fetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(STORE)});
+    const res=await apiFetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(STORE)});
+    if(res.status===401)return;
     if(!res.ok)throw new Error('bad response');
     cloudSaveFailed=false;
   }catch(e){
@@ -175,7 +205,7 @@ async function del(store,key){
   STORE[store]=STORE[store].filter(x=>x[kp]!==key);
   await persistStore();
 }
-loadStore();
+if(appPassword()){loadStore();}else{showPwGate(false);}
 async function initialize(){buildYearOptions();buildMonthFilter();document.getElementById('todayLabel').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});await loadSettings();await seedMerchantRules();await loadMerchantRules();await migrateLegacyDescriptions();await loadData();renderSavedLocations();refreshAll();}
 async function loadData(){entries=(await getAll('entries')).map(e=>{const d=(e.description||e.vendor||e.merchant||e.payee||e.title||e.name||'').trim()||(e.rawDescription?cleanBankDescription(e.rawDescription):'')||'Untitled';return{...e,description:d,owner:e.owner||'Gil',use:e.use||((e.category||'').match(/pension|social security|home|rent|health/i)?'personal':'business'),businessPct:e.businessPct??(e.use==='personal'?0:100)}});mileage=await getAll('mileage');}
 async function loadSettings(){const all=await getAll('settings');for(const x of all)settings[x.key]=x.value;settings.clientId=localStorage.getItem('gilGoogleClientId')||settings.clientId||GOOGLE_CLIENT_ID;if(settings.clientId.includes('-r1p1u'))settings.clientId=GOOGLE_CLIENT_ID;localStorage.setItem('gilGoogleClientId',settings.clientId);applyCustomCategories()}
