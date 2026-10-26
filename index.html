@@ -8,7 +8,7 @@
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 <style>
 :root{--bg:#0d0d0c;--panel:#181816;--panel2:#22211e;--line:#34322d;--gold:#c9a84c;--gold2:#ead180;--green:#4eb580;--red:#e36767;--blue:#6aa9e9;--text:#f4f0e7;--muted:#9a978f;--shadow:0 16px 45px rgba(0,0,0,.28);--r:16px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top right,#211d13 0,transparent 28%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh;padding-bottom:88px}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:880px;margin:auto}.top{position:sticky;top:0;z-index:30;background:rgba(13,13,12,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:16px}.brand{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand h1{font-family:Georgia,serif;font-size:1.35rem;margin:0;color:var(--gold2)}.brand p{margin:3px 0 0;color:var(--muted);font-size:.78rem}.year-select{width:auto;padding:8px 10px}.page{display:none;padding:16px}.page.active{display:block}.hero{background:linear-gradient(145deg,#252117,#171713 60%);border:1px solid #3a3425;border-radius:22px;padding:20px;box-shadow:var(--shadow)}.eyebrow{font-size:.7rem;text-transform:uppercase;letter-spacing:.13em;color:var(--gold)}.hero-balance{font-size:2rem;font-weight:750;margin-top:5px}.hero-sub{color:var(--muted);font-size:.84rem;margin-top:4px}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px}.stat small{color:var(--muted);display:block;font-size:.69rem;text-transform:uppercase;letter-spacing:.08em}.stat strong{display:block;margin-top:5px;font-size:1.05rem}.green{color:var(--green)}.red{color:var(--red)}.gold{color:var(--gold2)}.section{margin-top:18px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.section h2{font-family:Georgia,serif;color:var(--gold2);font-size:1.05rem;margin:0}.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px}.quick{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.btn{border:0;border-radius:12px;padding:12px 14px;font-weight:700;background:var(--gold);color:#15130e}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.btn.greenbtn{background:var(--green);color:white}.btn.redbtn{background:transparent;color:var(--red);border:1px solid #633}.btn.small{padding:8px 10px;font-size:.79rem}.btn:disabled{opacity:.45;cursor:not-allowed}.list{display:flex;flex-direction:column;gap:9px}.tx{display:flex;align-items:center;gap:11px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px}.tx-icon{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:var(--panel2);font-weight:800}.tx-main{min-width:0;flex:1}.tx-title{font-weight:720;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tx-meta{font-size:.73rem;color:var(--muted);margin-top:3px}.tx-amount{font-weight:800;text-align:right}.owner{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px 7px;font-size:.65rem;margin-left:4px;color:var(--muted)}.empty{text-align:center;color:var(--muted);padding:28px 12px}.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}.filters .wide{grid-column:1/-1}.field label{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;margin:0 0 5px}.field input,.field select,.field textarea,.year-select{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:10px;color:var(--text);padding:10px 11px;outline:none}.field textarea{min-height:75px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.form-stack{display:flex;flex-direction:column;gap:11px}.toggle{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:12px;overflow:hidden}.toggle button{border:0;padding:11px;background:var(--panel2);color:var(--muted);font-weight:750}.toggle button.active.income{background:var(--green);color:white}.toggle button.active.expense{background:var(--red);color:white}.tabs{position:fixed;z-index:40;bottom:0;left:0;right:0;background:rgba(20,20,18,.97);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(6,1fr);padding:6px max(6px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left))}.nav{border:0;background:transparent;color:var(--muted);padding:7px 2px;font-size:.6rem}.nav b{display:block;font-size:1.15rem;margin-bottom:2px}.nav.active{color:var(--gold2)}.modal{display:none;position:fixed;z-index:70;inset:0;background:rgba(0,0,0,.72);padding:14px;overflow:auto}.modal.open{display:flex;align-items:flex-start;justify-content:center}.sheet{width:min(620px,100%);background:#171715;border:1px solid var(--line);border-radius:20px;padding:16px;margin:auto;box-shadow:var(--shadow)}.sheet-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.sheet h2{margin:0;color:var(--gold2);font-family:Georgia,serif;font-size:1.15rem}.close{border:0;background:var(--panel2);color:var(--text);border-radius:50%;width:36px;height:36px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.chart{display:flex;align-items:flex-end;height:140px;gap:7px;padding-top:12px}.bar-wrap{flex:1;text-align:center}.bar{border-radius:7px 7px 2px 2px;min-height:2px;background:linear-gradient(var(--gold2),var(--gold));}.bar-label{font-size:.65rem;color:var(--muted);margin-top:5px}.report-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.report-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px}.report-card h3{margin:0 0 8px;font-size:.83rem;color:var(--muted)}.report-card strong{font-size:1.2rem}.table{width:100%;border-collapse:collapse;font-size:.79rem}.table th,.table td{text-align:left;border-bottom:1px solid var(--line);padding:9px 5px}.table th{color:var(--muted)}.table td:last-child,.table th:last-child{text-align:right}.gmail-status{color:var(--muted);font-size:.8rem;line-height:1.45;margin:9px 0}.review-item{background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:12px;margin-top:9px}.review-top{display:flex;justify-content:space-between;gap:8px}.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.checkbox{display:flex;align-items:center;gap:8px;font-size:.82rem;margin-top:8px}.checkbox input{width:18px;height:18px}.receipt-link{color:var(--gold2)}.danger-zone{border-color:#5b2c2c}.toast{position:fixed;z-index:100;bottom:92px;left:50%;transform:translate(-50%,130px);background:var(--gold2);color:#17130c;border-radius:999px;padding:10px 18px;font-weight:800;transition:.25s}.toast.show{transform:translate(-50%,0)}.muted{color:var(--muted);font-size:.8rem}.pill-row{display:flex;flex-wrap:wrap;gap:7px}.pill{border:1px solid var(--line);background:var(--panel2);color:var(--muted);border-radius:999px;padding:6px 10px;font-size:.72rem}.pill.active{background:var(--gold);color:#17130c;border-color:var(--gold)}.rule-card{background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:12px;margin-top:9px}.rule-card .rule-title{font-weight:800}.rule-card .rule-meta{font-size:.73rem;color:var(--muted);margin-top:4px;line-height:1.45}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top right,#211d13 0,transparent 28%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh;padding-bottom:88px}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:880px;margin:auto}.top{position:sticky;top:0;z-index:30;background:rgba(13,13,12,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:16px}.brand{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand h1{font-family:Georgia,serif;font-size:1.35rem;margin:0;color:var(--gold2)}.brand p{margin:3px 0 0;color:var(--muted);font-size:.78rem}.year-select{width:auto;padding:8px 10px}.page{display:none;padding:16px}.page.active{display:block}.hero{background:linear-gradient(145deg,#252117,#171713 60%);border:1px solid #3a3425;border-radius:22px;padding:20px;box-shadow:var(--shadow)}.eyebrow{font-size:.7rem;text-transform:uppercase;letter-spacing:.13em;color:var(--gold)}.hero-balance{font-size:2rem;font-weight:750;margin-top:5px}.hero-sub{color:var(--muted);font-size:.84rem;margin-top:4px}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px}.stat small{color:var(--muted);display:block;font-size:.69rem;text-transform:uppercase;letter-spacing:.08em}.stat strong{display:block;margin-top:5px;font-size:1.05rem}.green{color:var(--green)}.red{color:var(--red)}.gold{color:var(--gold2)}.section{margin-top:18px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.section h2{font-family:Georgia,serif;color:var(--gold2);font-size:1.05rem;margin:0}.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px}.quick{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.btn{border:0;border-radius:12px;padding:12px 14px;font-weight:700;background:var(--gold);color:#15130e}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.btn.greenbtn{background:var(--green);color:white}.btn.redbtn{background:transparent;color:var(--red);border:1px solid #633}.btn.small{padding:8px 10px;font-size:.79rem}.btn:disabled{opacity:.45;cursor:not-allowed}.list{display:flex;flex-direction:column;gap:9px}.tx{display:flex;align-items:center;gap:11px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px}.tx-icon{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:var(--panel2);font-weight:800}.tx-main{min-width:0;flex:1}.tx-title{font-weight:720;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tx-meta{font-size:.73rem;color:var(--muted);margin-top:3px}.tx-amount{font-weight:800;text-align:right}.owner{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px 7px;font-size:.65rem;margin-left:4px;color:var(--muted)}.empty{text-align:center;color:var(--muted);padding:28px 12px}.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}.filters .wide{grid-column:1/-1}.field label{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;margin:0 0 5px}.field input,.field select,.field textarea,.year-select{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:10px;color:var(--text);padding:10px 11px;outline:none}.field textarea{min-height:75px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.form-stack{display:flex;flex-direction:column;gap:11px}.toggle{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:12px;overflow:hidden}.toggle button{border:0;padding:11px;background:var(--panel2);color:var(--muted);font-weight:750}.toggle button.active.income{background:var(--green);color:white}.toggle button.active.expense{background:var(--red);color:white}.tabs{position:fixed;z-index:40;bottom:0;left:0;right:0;background:rgba(20,20,18,.97);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(6,1fr);padding:6px max(6px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left))}.nav{border:0;background:transparent;color:var(--muted);padding:7px 2px;font-size:.6rem}.nav b{display:block;font-size:1.15rem;margin-bottom:2px}.nav.active{color:var(--gold2)}.modal{display:none;position:fixed;z-index:70;inset:0;background:rgba(0,0,0,.72);padding:14px;overflow:auto}.modal.open{display:flex;align-items:flex-start;justify-content:center}.sheet{width:min(620px,100%);background:#171715;border:1px solid var(--line);border-radius:20px;padding:16px;margin:auto;box-shadow:var(--shadow)}.sheet-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.sheet h2{margin:0;color:var(--gold2);font-family:Georgia,serif;font-size:1.15rem}.close{border:0;background:var(--panel2);color:var(--text);border-radius:50%;width:36px;height:36px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.chart{display:flex;align-items:flex-end;height:140px;gap:7px;padding-top:12px}.bar-wrap{flex:1;text-align:center}.bar{border-radius:7px 7px 2px 2px;min-height:2px;background:linear-gradient(var(--gold2),var(--gold));}.bar-label{font-size:.65rem;color:var(--muted);margin-top:5px}.report-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.report-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px}.report-card h3{margin:0 0 8px;font-size:.83rem;color:var(--muted)}.report-card strong{font-size:1.2rem}.table{width:100%;border-collapse:collapse;font-size:.79rem}.table th,.table td{text-align:left;border-bottom:1px solid var(--line);padding:9px 5px}.table th{color:var(--muted)}.table td:last-child,.table th:last-child{text-align:right}.gmail-status{color:var(--muted);font-size:.8rem;line-height:1.45;margin:9px 0}.review-item{background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:12px;margin-top:9px}.review-top{display:flex;justify-content:space-between;gap:8px}.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.checkbox{display:flex;align-items:center;gap:8px;font-size:.82rem;margin-top:8px}.checkbox input{width:18px;height:18px}.receipt-link{color:var(--gold2)}.danger-zone{border-color:#5b2c2c}.toast{position:fixed;z-index:100;bottom:92px;left:50%;transform:translate(-50%,130px);background:var(--gold2);color:#17130c;border-radius:999px;padding:10px 18px;font-weight:800;transition:.25s;pointer-events:none;max-width:calc(100vw - 32px);text-align:center}.toast.show{transform:translate(-50%,0)}.muted{color:var(--muted);font-size:.8rem}.pill-row{display:flex;flex-wrap:wrap;gap:7px}.pill{border:1px solid var(--line);background:var(--panel2);color:var(--muted);border-radius:999px;padding:6px 10px;font-size:.72rem}.pill.active{background:var(--gold);color:#17130c;border-color:var(--gold)}.rule-card{background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:12px;margin-top:9px}.rule-card .rule-title{font-weight:800}.rule-card .rule-meta{font-size:.73rem;color:var(--muted);margin-top:4px;line-height:1.45}
 .import-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0}.import-stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px;min-width:0}.import-stat small{display:block;color:var(--muted);font-size:.65rem;text-transform:uppercase;letter-spacing:.06em}.import-stat strong{display:block;margin-top:3px;font-size:1rem}.bank-review-tools{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.confidence-badge,.duplicate-badge{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;font-size:.68rem;font-weight:800;border:1px solid var(--line);margin:0 5px 5px 0}.confidence-high{background:#183427;color:#8ed9ae;border-color:#285940}.confidence-review{background:#3b3218;color:#f1d47c;border-color:#645526}.confidence-unknown{background:#3b2020;color:#f0a0a0;border-color:#6a3434}.duplicate-definite{background:#352323;color:#f0a0a0;border-color:#6a3434}.duplicate-possible{background:#3b3218;color:#f1d47c;border-color:#645526}.duplicate-new{background:#1c2f3c;color:#9bcff4;border-color:#34556a}.review-item.auto-skip{opacity:.72}.review-note{font-size:.78rem;color:var(--muted);line-height:1.45;margin:8px 0}.row-warning{background:#312719;border:1px solid #594624;color:#ead180;border-radius:10px;padding:8px 10px;font-size:.75rem;line-height:1.4;margin-top:8px}.row-error{background:#351f1f;border-color:#663333;color:#f0aaaa}.original-bank-text{white-space:pre-wrap;overflow-wrap:anywhere}.review-top{align-items:flex-start;flex-wrap:wrap}.review-top .amount-block{margin-left:auto;text-align:right}.show-all-control{margin:0}.show-all-control input{width:20px;height:20px}.import-complete{background:#183427;border:1px solid #285940;color:#b8e8ca;border-radius:12px;padding:11px;font-size:.8rem;line-height:1.5;margin-top:10px}
 .tip-progress{background:var(--panel2);border-radius:999px;height:8px;overflow:hidden;margin-top:8px}.tip-progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2))}
 .check-item{background:#312719;border:1px solid #594624;color:var(--gold2);border-radius:10px;padding:9px 11px;font-size:.8rem;line-height:1.45;margin-top:8px}.check-ok{background:#183427;border-color:#285940;color:#b8e8ca}.tr-block h3{margin:0 0 6px;font-size:.85rem;color:var(--muted)}.print-only{display:none}
@@ -18,93 +18,80 @@
 </head>
 <body><div class="app">
 <header class="top"><div class="brand"><div><h1>Gil & Amporn Money Manager</h1><p id="todayLabel">Private household and tax records</p></div><select id="yearSelect" class="year-select" onchange="refreshAll()"></select></div></header>
-
 <main>
 <section id="dashboard" class="page active">
- <div class="hero"><div class="eyebrow">Combined cash flow · <span id="heroPeriod"></span></div><div id="heroBalance" class="hero-balance">$0.00</div><div class="hero-sub">Income minus expenses for Gil, Amporn, and the joint household.</div></div>
- <div class="summary"><div class="stat"><small>Income</small><strong id="dashIncome" class="green">$0</strong></div><div class="stat"><small>Expenses</small><strong id="dashExpense" class="red">$0</strong></div><div class="stat"><small>Business profit</small><strong id="dashProfit" class="gold">$0</strong></div></div>
- <div class="section"><div class="section-head"><h2>Quick entry</h2></div><div class="quick"><button class="btn greenbtn" onclick="openTransaction('income')">+ Add income</button><button class="btn" onclick="openTransaction('expense')">− Add expense</button><button class="btn secondary" onclick="openMileage()">🚗 Add mileage</button><button class="btn secondary" onclick="showPage('receipts')">✉ Scan receipts</button></div></div>
- <div class="section"><div class="section-head"><h2>Monthly activity</h2></div><div class="panel"><div id="monthlyChart" class="chart"></div></div></div>
- <div class="section"><div class="section-head"><h2>Recent transactions</h2><button class="btn secondary small" onclick="showPage('transactions')">View all</button></div><div id="recentList" class="list"></div></div>
- <div class="section"><div class="section-head"><h2>Upcoming recurring items</h2></div><div id="recurringList" class="list"></div></div>
+<div class="hero"><div class="eyebrow">Combined cash flow · <span id="heroPeriod"></span></div><div id="heroBalance" class="hero-balance">$0.00</div><div class="hero-sub">Income minus expenses for Gil, Amporn, and the joint household.</div></div>
+<div class="summary"><div class="stat"><small>Income</small><strong id="dashIncome" class="green">$0</strong></div><div class="stat"><small>Expenses</small><strong id="dashExpense" class="red">$0</strong></div><div class="stat"><small>Business profit</small><strong id="dashProfit" class="gold">$0</strong></div></div>
+<div class="section"><div class="section-head"><h2>Quick entry</h2></div><div class="quick"><button class="btn greenbtn" onclick="openTransaction('income')">+ Add income</button><button class="btn" onclick="openTransaction('expense')">− Add expense</button><button class="btn secondary" onclick="openMileage()">🚗 Add mileage</button><button class="btn secondary" onclick="showPage('receipts')">✉ Scan receipts</button></div></div>
+<div class="section"><div class="section-head"><h2>Monthly activity</h2></div><div class="panel"><div id="monthlyChart" class="chart"></div></div></div>
+<div class="section"><div class="section-head"><h2>Recent transactions</h2><button class="btn secondary small" onclick="showPage('transactions')">View all</button></div><div id="recentList" class="list"></div></div>
+<div class="section"><div class="section-head"><h2>Upcoming recurring items</h2></div><div id="recurringList" class="list"></div></div>
 </section>
-
 <section id="transactions" class="page">
- <div class="section-head"><h2>Transactions</h2><button class="btn small" onclick="openTransaction('expense')">+ Add</button></div>
- <div class="filters"><div class="field wide"><input id="searchTx" placeholder="Search description, category, notes…" oninput="renderTransactions()"></div><div class="field"><select id="filterOwner" onchange="renderTransactions()"><option value="all">All owners</option><option>Gil</option><option>Amporn</option><option>Joint Household</option></select></div><div class="field"><select id="filterType" onchange="renderTransactions()"><option value="all">Income & expenses</option><option value="income">Income</option><option value="expense">Expenses</option></select></div><div class="field"><select id="filterBusiness" onchange="renderTransactions()"><option value="all">Business & personal</option><option value="business">Business only</option><option value="personal">Personal only</option></select></div><div class="field"><select id="filterMonth" onchange="renderTransactions()"><option value="all">All months</option></select></div></div>
- <div id="transactionList" class="list"></div>
+<div class="section-head"><h2>Transactions</h2><button class="btn small" onclick="openTransaction('expense')">+ Add</button></div>
+<div class="filters"><div class="field wide"><input id="searchTx" placeholder="Search description, category, notes…" oninput="renderTransactions()"></div><div class="field"><select id="filterOwner" onchange="renderTransactions()"><option value="all">All owners</option><option>Gil</option><option>Amporn</option><option>Joint Household</option></select></div><div class="field"><select id="filterType" onchange="renderTransactions()"><option value="all">Income & expenses</option><option value="income">Income</option><option value="expense">Expenses</option></select></div><div class="field"><select id="filterBusiness" onchange="renderTransactions()"><option value="all">Business & personal</option><option value="business">Business only</option><option value="personal">Personal only</option></select></div><div class="field"><select id="filterMonth" onchange="renderTransactions()"><option value="all">All months</option></select></div></div>
+<div id="transactionList" class="list"></div>
 </section>
-
 <section id="mileage" class="page">
- <div class="section-head"><h2>Mileage</h2><button class="btn small" onclick="openMileage()">+ Trip</button></div>
- <div class="summary"><div class="stat"><small>Business miles</small><strong id="mileTotal" class="gold">0</strong></div><div class="stat"><small>Estimated deduction</small><strong id="mileDeduction" class="green">$0</strong></div><div class="stat"><small>Trips</small><strong id="mileTrips">0</strong></div></div>
- <div class="panel muted">The mileage rate is editable in Settings. Trips marked "regular workplace" are usually commuting, so they are left out of the deduction estimate. Log everything and let your accountant make the final call.</div>
- <div id="mileageList" class="list section"></div>
+<div class="section-head"><h2>Mileage</h2><button class="btn small" onclick="openMileage()">+ Trip</button></div>
+<div class="summary"><div class="stat"><small>Business miles</small><strong id="mileTotal" class="gold">0</strong></div><div class="stat"><small>Estimated deduction</small><strong id="mileDeduction" class="green">$0</strong></div><div class="stat"><small>Trips</small><strong id="mileTrips">0</strong></div></div>
+<div class="panel muted">The mileage rate is editable in Settings. Trips marked "regular workplace" are usually commuting, so they are left out of the deduction estimate. Log everything and let your accountant make the final call.</div>
+<div id="mileageList" class="list section"></div>
 </section>
-
 <section id="receipts" class="page">
- <div class="section-head"><h2>Gmail receipts</h2><div style="display:flex;gap:7px"><button class="btn secondary small" onclick="openMerchantLibrary()">Merchant Library</button><button class="btn secondary small" onclick="openSettings()">Settings</button></div></div>
- <div class="panel"><button id="scanBtn" class="btn greenbtn" onclick="startGmailScan()">Scan Gmail for receipts</button><div id="gmailStatus" class="gmail-status">Connect Gmail only when you want to scan. Nothing is uploaded to a separate server.</div><button class="btn secondary small" onclick="disconnectGmail()">Disconnect Gmail</button></div>
- <div class="section"><div class="section-head"><h2>Bank statement import</h2></div><div class="panel"><p class="muted" style="margin-top:0">Import a Wells Fargo PDF statement, a bank CSV, or a cleaned CSV prepared for this app. The statement is processed on this device.</p><label class="btn secondary" style="display:block;text-align:center">Choose bank PDF or CSV<input id="bankFileInput" type="file" accept=".pdf,application/pdf,.csv,text/csv" onchange="loadBankFile(event)" hidden></label><div id="bankStatus" class="gmail-status">The app will read the printed transaction columns, preserve the original description, suggest classifications, and let you review everything before saving.</div></div></div>
- <div id="bankReview" class="section" style="display:none"><div class="bank-review-tools"><h2 style="margin:0">Smart Import review</h2><label class="checkbox show-all-control"><input id="bankShowAll" type="checkbox" onchange="setBankShowAll(this.checked)"> Show all transactions</label></div><div id="bankImportSummary" class="import-summary"></div><div id="bankReviewNotice" class="review-note"></div><div id="bankReviewList"></div><div class="actions"><button class="btn secondary" onclick="closeBankReview()">Cancel</button><button id="bankImportBtn" class="btn" onclick="importSelectedBankRows()">Import ready transactions</button></div></div>
- <div id="receiptReview" class="section" style="display:none"><div class="section-head"><h2>Review Gmail receipts</h2></div><div id="reviewList"></div><div class="actions"><button class="btn secondary" onclick="closeReceiptReview()">Cancel</button><button class="btn" onclick="importSelectedReceipts()">Import selected</button></div></div>
+<div class="section-head"><h2>Gmail receipts</h2><div style="display:flex;gap:7px"><button class="btn secondary small" onclick="openMerchantLibrary()">Merchant Library</button><button class="btn secondary small" onclick="openSettings()">Settings</button></div></div>
+<div class="panel"><button id="scanBtn" class="btn greenbtn" onclick="startGmailScan()">Scan Gmail for receipts</button><div id="gmailStatus" class="gmail-status">Connect Gmail only when you want to scan. Nothing is uploaded to a separate server.</div><button class="btn secondary small" onclick="disconnectGmail()">Disconnect Gmail</button></div>
+<div class="section"><div class="section-head"><h2>Bank statement import</h2></div><div class="panel"><p class="muted" style="margin-top:0">Import a Wells Fargo PDF statement, a bank CSV, or a cleaned CSV prepared for this app. The statement is processed on this device.</p><label class="btn secondary" style="display:block;text-align:center">Choose bank PDF or CSV<input id="bankFileInput" type="file" accept=".pdf,application/pdf,.csv,text/csv" onchange="loadBankFile(event)" hidden></label><div id="bankStatus" class="gmail-status">The app will read the printed transaction columns, preserve the original description, suggest classifications, and let you review everything before saving.</div></div></div>
+<div id="bankReview" class="section" style="display:none"><div class="bank-review-tools"><h2 style="margin:0">Smart Import review</h2><label class="checkbox show-all-control"><input id="bankShowAll" type="checkbox" onchange="setBankShowAll(this.checked)"> Show all transactions</label></div><div id="bankImportSummary" class="import-summary"></div><div id="bankReviewNotice" class="review-note"></div><div id="bankReviewList"></div><div class="actions"><button class="btn secondary" onclick="closeBankReview()">Cancel</button><button id="bankImportBtn" class="btn" onclick="importSelectedBankRows()">Import ready transactions</button></div></div>
+<div id="receiptReview" class="section" style="display:none"><div class="section-head"><h2>Review Gmail receipts</h2></div><div id="reviewList"></div><div class="actions"><button class="btn secondary" onclick="closeReceiptReview()">Cancel</button><button class="btn" onclick="importSelectedReceipts()">Import selected</button></div></div>
 </section>
-
 <section id="reports" class="page">
- <div class="section-head"><h2>Reports</h2><button class="btn secondary small" onclick="window.print()">Print</button></div>
- <div class="report-grid"><div class="report-card"><h3>Gil business profit</h3><strong id="gilProfit">$0</strong></div><div class="report-card"><h3>Amporn business profit</h3><strong id="ampornProfit">$0</strong></div><div class="report-card"><h3>Joint household cash flow</h3><strong id="jointFlow">$0</strong></div><div class="report-card"><h3>Estimated federal tax reserve</h3><strong id="taxEstimate">$0</strong></div></div>
- <div class="section"><div class="section-head"><h2>Qualified tips tracker</h2></div><div class="report-grid"><div class="report-card"><h3>Gil tips this year</h3><strong id="gilTips" class="gold">$0</strong><div class="tip-progress"><div id="gilTipsBar" class="tip-progress-fill" style="width:0%"></div></div><div class="muted" id="gilTipsNote" style="margin-top:6px;font-size:.72rem"></div></div><div class="report-card"><h3>Amporn tips this year</h3><strong id="ampornTips" class="gold">$0</strong><div class="tip-progress"><div id="ampornTipsBar" class="tip-progress-fill" style="width:0%"></div></div><div class="muted" id="ampornTipsNote" style="margin-top:6px;font-size:.72rem"></div></div></div><p class="muted" style="margin-top:8px">The federal "No Tax on Tips" deduction caps qualified tips at $25,000 per person for tax years 2025 through 2028, and phases out above $150,000 income for a single filer or $300,000 for a joint return. Confirm current rules with a qualified tax professional.</p></div>
- <div class="section"><div class="section-head"><h2>Income and expense by owner</h2></div><div class="panel"><table class="table"><thead><tr><th>Owner</th><th>Income</th><th>Expense</th><th>Net</th></tr></thead><tbody id="ownerReport"></tbody></table></div></div>
- <div class="section"><div class="section-head"><h2>Business expenses by category</h2></div><div class="panel"><table class="table"><thead><tr><th>Category</th><th>Amount</th></tr></thead><tbody id="categoryReport"></tbody></table></div></div>
- <div class="section no-print"><div class="section-head"><h2>Export and backup</h2></div><div class="quick"><button class="btn secondary" onclick="exportCSV()">Export transactions CSV</button><button class="btn secondary" onclick="exportMileageCSV()">Export mileage CSV</button><button class="btn secondary" onclick="exportTaxReportCSV()">Export tax report CSV</button><button class="btn secondary" onclick="exportBackup()">Backup all data</button><label class="btn secondary" style="text-align:center">Restore backup<input type="file" accept="application/json" onchange="restoreBackup(event)" hidden></label><button class="btn secondary" onclick="openSettings()">Tax settings</button></div></div>
- <div class="section no-print"><div class="panel danger-zone"><h2 style="margin-bottom:8px">Danger zone</h2><p class="muted">Deletes all transactions, mileage, and imported-receipt history from this device.</p><button class="btn redbtn" onclick="clearAllData()">Clear all records</button></div></div>
+<div class="section-head"><h2>Reports</h2><button class="btn secondary small" onclick="window.print()">Print</button></div>
+<div class="report-grid"><div class="report-card"><h3>Gil business profit</h3><strong id="gilProfit">$0</strong></div><div class="report-card"><h3>Amporn business profit</h3><strong id="ampornProfit">$0</strong></div><div class="report-card"><h3>Joint household cash flow</h3><strong id="jointFlow">$0</strong></div><div class="report-card"><h3>Estimated federal tax reserve</h3><strong id="taxEstimate">$0</strong></div></div>
+<div class="section"><div class="section-head"><h2>Qualified tips tracker</h2></div><div class="report-grid"><div class="report-card"><h3>Gil tips this year</h3><strong id="gilTips" class="gold">$0</strong><div class="tip-progress"><div id="gilTipsBar" class="tip-progress-fill" style="width:0%"></div></div><div class="muted" id="gilTipsNote" style="margin-top:6px;font-size:.72rem"></div></div><div class="report-card"><h3>Amporn tips this year</h3><strong id="ampornTips" class="gold">$0</strong><div class="tip-progress"><div id="ampornTipsBar" class="tip-progress-fill" style="width:0%"></div></div><div class="muted" id="ampornTipsNote" style="margin-top:6px;font-size:.72rem"></div></div></div><p class="muted" style="margin-top:8px">The federal "No Tax on Tips" deduction caps qualified tips at $25,000 per person for tax years 2025 through 2028, and phases out above $150,000 income for a single filer or $300,000 for a joint return. Confirm current rules with a qualified tax professional.</p></div>
+<div class="section"><div class="section-head"><h2>Income and expense by owner</h2></div><div class="panel"><table class="table"><thead><tr><th>Owner</th><th>Income</th><th>Expense</th><th>Net</th></tr></thead><tbody id="ownerReport"></tbody></table></div></div>
+<div class="section"><div class="section-head"><h2>Business expenses by category</h2></div><div class="panel"><table class="table"><thead><tr><th>Category</th><th>Amount</th></tr></thead><tbody id="categoryReport"></tbody></table></div></div>
+<div class="section no-print"><div class="section-head"><h2>Export and backup</h2></div><div class="quick"><button class="btn secondary" onclick="exportCSV()">Export transactions CSV</button><button class="btn secondary" onclick="exportMileageCSV()">Export mileage CSV</button><button class="btn secondary" onclick="exportTaxReportCSV()">Export tax report CSV</button><button class="btn secondary" onclick="exportBackup()">Backup all data</button><label class="btn secondary" style="text-align:center">Restore backup<input type="file" accept="application/json" onchange="restoreBackup(event)" hidden></label><button class="btn secondary" onclick="openSettings()">Tax settings</button></div></div>
+<div class="section no-print"><div class="panel danger-zone"><h2 style="margin-bottom:8px">Danger zone</h2><p class="muted">Deletes all transactions, mileage, and imported-receipt history from this device.</p><button class="btn redbtn" onclick="clearAllData()">Clear all records</button></div></div>
 </section>
-
 <section id="taxreport" class="page">
- <div class="section-head"><h2>Tax report for your accountant</h2><div class="no-print" style="display:flex;gap:7px"><button class="btn secondary small" onclick="window.print()">Print / PDF</button><button class="btn small" onclick="exportTaxReportCSV()">Download CSV</button></div></div>
- <div id="taxViewPills" class="pill-row no-print" style="margin-bottom:6px"></div>
- <div id="taxReportBody"></div>
+<div class="section-head"><h2>Tax report for your accountant</h2><div class="no-print" style="display:flex;gap:7px"><button class="btn secondary small" onclick="window.print()">Print / PDF</button><button class="btn small" onclick="exportTaxReportCSV()">Download CSV</button></div></div>
+<div id="taxViewPills" class="pill-row no-print" style="margin-bottom:6px"></div>
+<div id="taxReportBody"></div>
 </section>
 </main>
 </div>
-
 <nav class="tabs"><button class="nav active" data-page="dashboard" onclick="showPage('dashboard',this)"><b>⌂</b>Home</button><button class="nav" data-page="transactions" onclick="showPage('transactions',this)"><b>↕</b>Transactions</button><button class="nav" data-page="mileage" onclick="showPage('mileage',this)"><b>🚗</b>Mileage</button><button class="nav" data-page="receipts" onclick="showPage('receipts',this)"><b>✉</b>Receipts</button><button class="nav" data-page="reports" onclick="showPage('reports',this)"><b>▥</b>Reports</button><button class="nav" data-page="taxreport" onclick="showPage('taxreport',this)"><b>🧾</b>Tax</button></nav>
-
 <div id="txModal" class="modal"><div class="sheet"><div class="sheet-head"><h2 id="txModalTitle">Add transaction</h2><button class="close" onclick="closeModal('txModal')">×</button></div><div class="form-stack">
- <div class="toggle"><button id="incomeToggle" onclick="setTxType('income')">Income</button><button id="expenseToggle" onclick="setTxType('expense')">Expense</button></div>
- <div class="grid2"><div class="field"><label>Owner</label><select id="txOwner"><option>Gil</option><option>Amporn</option><option>Joint Household</option></select></div><div class="field"><label>Date</label><input id="txDate" type="date"></div></div>
- <div class="field"><label>Description / payer / vendor</label><input id="txDescription" placeholder="Example: Naam Khao gig"></div>
- <div class="grid2"><div class="field"><label>Amount</label><input id="txAmount" type="number" step="0.01" inputmode="decimal" placeholder="0.00"></div><div class="field"><label>Category</label><select id="txCategory" onchange="onTxCategoryChange()"></select></div></div><div id="incomeTypeRow" class="field"><label>Income type</label><select id="txIncomeType"><option>W-2 Employment</option><option>1099 Self-Employment</option><option>Social Security</option><option>Pension</option><option>Interest</option><option>Refund</option><option>Transfer</option><option>Other Income</option></select></div>
- <div id="txTipRow" class="checkbox" style="display:none"><input id="txIsTip" type="checkbox"> This was a tip (counts toward the $25,000 tips deduction)</div>
- <div class="grid2"><div class="field"><label>Use</label><select id="txUse"><option value="business">Business</option><option value="personal">Personal</option><option value="mixed">Mixed business/personal</option></select></div><div class="field"><label>Business percentage</label><input id="txBusinessPct" type="number" min="0" max="100" value="100"></div></div>
- <div class="grid2"><div class="field"><label>Payment method</label><select id="txPayment"><option>Bank</option><option>Cash</option><option>Credit Card</option><option>Zelle</option><option>PayPal</option><option>Other</option></select></div><div class="field"><label>Recurring</label><select id="txRecurring"><option value="none">No</option><option value="monthly">Monthly</option><option value="weekly">Weekly</option><option value="yearly">Yearly</option></select></div></div>
- <div class="field"><label>Notes</label><textarea id="txNotes" placeholder="Optional details"></textarea></div>
- <div class="field"><label>Receipt link</label><input id="txReceiptUrl" placeholder="Optional Gmail or web link"></div><label class="checkbox"><input id="txLearnMerchant" type="checkbox" checked> Remember this merchant and classification for future imports</label>
- </div><div class="actions"><button id="deleteTxBtn" class="btn redbtn" onclick="deleteCurrentTransaction()">Delete</button><button class="btn" onclick="saveTransaction()">Save transaction</button></div></div></div>
-
+<div class="toggle"><button id="incomeToggle" onclick="setTxType('income')">Income</button><button id="expenseToggle" onclick="setTxType('expense')">Expense</button></div>
+<div class="grid2"><div class="field"><label>Owner</label><select id="txOwner"><option>Gil</option><option>Amporn</option><option>Joint Household</option></select></div><div class="field"><label>Date</label><input id="txDate" type="date"></div></div>
+<div class="field"><label>Description / payer / vendor</label><input id="txDescription" placeholder="Example: Naam Khao gig"></div>
+<div class="grid2"><div class="field"><label>Amount</label><input id="txAmount" type="number" step="0.01" inputmode="decimal" placeholder="0.00"></div><div class="field"><label>Category</label><select id="txCategory" onchange="onTxCategoryChange()"></select></div></div><div id="incomeTypeRow" class="field"><label>Income type</label><select id="txIncomeType"><option>W-2 Employment</option><option>1099 Self-Employment</option><option>Social Security</option><option>Pension</option><option>Interest</option><option>Refund</option><option>Transfer</option><option>Other Income</option></select></div>
+<div id="txTipRow" class="checkbox" style="display:none"><input id="txIsTip" type="checkbox"> This was a tip (counts toward the $25,000 tips deduction)</div>
+<div class="grid2"><div class="field"><label>Use</label><select id="txUse"><option value="business">Business</option><option value="personal">Personal</option><option value="mixed">Mixed business/personal</option></select></div><div class="field"><label>Business percentage</label><input id="txBusinessPct" type="number" min="0" max="100" value="100"></div></div>
+<div class="grid2"><div class="field"><label>Payment method</label><select id="txPayment"><option>Bank</option><option>Cash</option><option>Credit Card</option><option>Zelle</option><option>PayPal</option><option>Other</option></select></div><div class="field"><label>Recurring</label><select id="txRecurring"><option value="none">No</option><option value="monthly">Monthly</option><option value="weekly">Weekly</option><option value="yearly">Yearly</option></select></div></div>
+<div class="field"><label>Notes</label><textarea id="txNotes" placeholder="Optional details"></textarea></div>
+<div class="field"><label>Receipt link</label><input id="txReceiptUrl" placeholder="Optional Gmail or web link"></div><label class="checkbox"><input id="txLearnMerchant" type="checkbox" checked> Remember this merchant and classification for future imports</label>
+</div><div class="actions"><button id="deleteTxBtn" class="btn redbtn" onclick="deleteCurrentTransaction()">Delete</button><button class="btn" onclick="saveTransaction()">Save transaction</button></div></div></div>
 <div id="mileModal" class="modal"><div class="sheet"><div class="sheet-head"><h2 id="mileModalTitle">Add mileage</h2><button class="close" onclick="closeModal('mileModal')">×</button></div><div class="form-stack"><div class="grid2"><div class="field"><label>Owner</label><select id="mileOwner"><option>Gil</option><option>Amporn</option></select></div><div class="field"><label>Date</label><input id="mileDate" type="date"></div></div><div class="field"><label>Business purpose</label><input id="milePurpose" placeholder="Gig, salon-to-salon trip, customer visit…"></div><div class="field"><label>Trip type</label><select id="mileType"><option value="varying">Between jobs or varying locations</option><option value="regular">To or from my regular workplace</option></select></div><div class="grid2"><div class="field"><label>Start / location</label><input id="mileFrom" list="savedLocations"></div><div class="field"><label>Destination</label><input id="mileTo" list="savedLocations"></div></div><datalist id="savedLocations"></datalist><div class="grid2"><div class="field"><label>Business distance</label><input id="mileMiles" type="number" step="0.1" inputmode="decimal"></div><div class="field"><label>Unit</label><select id="mileUnit"><option value="mi">Miles</option><option value="km">Kilometers</option></select></div></div><label class="checkbox"><input id="rememberLocations" type="checkbox" checked> Remember new locations for future trips</label><div class="field"><label>Notes</label><textarea id="mileNotes"></textarea></div></div><div class="actions"><button id="deleteMileBtn" class="btn redbtn" onclick="deleteCurrentMileage()">Delete</button><button class="btn" onclick="saveMileage()">Save trip</button></div></div></div>
-
 <div id="settingsModal" class="modal"><div class="sheet"><div class="sheet-head"><h2>Settings</h2><button class="close" onclick="closeModal('settingsModal')">×</button></div><div class="form-stack"><div class="field"><label>Estimated federal tax reserve %</label><input id="taxRate" type="number" min="0" max="60" step="0.5"></div><div class="field"><label>Business mileage rate per mile</label><input id="mileageRate" type="number" min="0" step="0.001"></div><div class="field"><label>Saved work locations (one per line)</label><textarea id="savedLocationsInput" placeholder="Salon 1&#10;Salon 2&#10;Home"></textarea></div><div class="field"><label>My own expense categories (one per line)</label><textarea id="customExpenseInput" placeholder="Dry cleaning"></textarea></div><div class="field"><label>My own income categories (one per line)</label><textarea id="customIncomeInput" placeholder="Workshop fees"></textarea></div><div class="field"><label>Google OAuth Client ID</label><input id="clientIdInput"></div><p class="muted">Rates are planning estimates. Confirm tax rules and rates with a qualified tax professional.</p></div><div class="actions"><button class="btn secondary" onclick="closeModal('settingsModal')">Cancel</button><button class="btn" onclick="saveSettings()">Save settings</button></div></div></div>
-
 <div id="merchantModal" class="modal"><div class="sheet"><div class="sheet-head"><h2>Merchant Library</h2><button class="close" onclick="closeModal('merchantModal')">×</button></div>
- <p class="muted" style="margin-top:0">These rules are applied automatically during future bank and Gmail imports. Editing a transaction with “Remember this merchant” checked will create or update a rule.</p>
- <div class="field"><input id="merchantSearch" placeholder="Search merchants or bank descriptions…" oninput="renderMerchantLibrary()"></div>
- <div id="merchantRuleList" style="margin-top:10px"></div>
- <div class="actions"><button class="btn secondary" onclick="addMerchantRule()">+ Add rule</button><button class="btn" onclick="closeModal('merchantModal')">Done</button></div>
+<p class="muted" style="margin-top:0">These rules are applied automatically during future bank and Gmail imports. Editing a transaction with “Remember this merchant” checked will create or update a rule.</p>
+<div class="field"><input id="merchantSearch" placeholder="Search merchants or bank descriptions…" oninput="renderMerchantLibrary()"></div>
+<div id="merchantRuleList" style="margin-top:10px"></div>
+<div class="actions"><button class="btn secondary" onclick="addMerchantRule()">+ Add rule</button><button class="btn" onclick="closeModal('merchantModal')">Done</button></div>
 </div></div>
-
 <div id="merchantEditModal" class="modal"><div class="sheet"><div class="sheet-head"><h2 id="merchantEditTitle">Merchant rule</h2><button class="close" onclick="closeModal('merchantEditModal')">×</button></div>
- <div class="form-stack">
-  <div class="field"><label>Bank description contains</label><input id="ruleMatch" placeholder="Example: THAI TIME LLC"></div>
-  <div class="field"><label>Display name</label><input id="ruleName" placeholder="Example: Naam Khao"></div>
-  <div class="grid2"><div class="field"><label>Type</label><select id="ruleType" onchange="updateRuleCategoryOptions()"><option value="expense">Expense</option><option value="income">Income</option></select></div><div class="field"><label>Owner</label><select id="ruleOwner"><option>Gil</option><option>Amporn</option><option>Joint Household</option></select></div></div>
-  <div class="field"><label>Category</label><select id="ruleCategory" onchange="onRuleCategoryChange()"></select></div>
-  <div id="ruleIncomeTypeRow" class="field"><label>Income type</label><select id="ruleIncomeType"><option>W-2 Employment</option><option>1099 Self-Employment</option><option>Social Security</option><option>Pension</option><option>Interest</option><option>Refund</option><option>Transfer</option><option>Other Income</option></select></div>
-  <div class="grid2"><div class="field"><label>Use</label><select id="ruleUse"><option value="business">Business</option><option value="personal">Personal</option><option value="mixed">Mixed</option></select></div><div class="field"><label>Business percentage</label><input id="ruleBusinessPct" type="number" min="0" max="100" value="100"></div></div>
- </div>
- <div class="actions"><button id="deleteRuleBtn" class="btn redbtn" onclick="deleteMerchantRule()">Delete</button><button class="btn" onclick="saveMerchantRule()">Save rule</button></div>
+<div class="form-stack">
+<div class="field"><label>Bank description contains</label><input id="ruleMatch" placeholder="Example: THAI TIME LLC"></div>
+<div class="field"><label>Display name</label><input id="ruleName" placeholder="Example: Naam Khao"></div>
+<div class="grid2"><div class="field"><label>Type</label><select id="ruleType" onchange="updateRuleCategoryOptions()"><option value="expense">Expense</option><option value="income">Income</option></select></div><div class="field"><label>Owner</label><select id="ruleOwner"><option>Gil</option><option>Amporn</option><option>Joint Household</option></select></div></div>
+<div class="field"><label>Category</label><select id="ruleCategory" onchange="onRuleCategoryChange()"></select></div>
+<div id="ruleIncomeTypeRow" class="field"><label>Income type</label><select id="ruleIncomeType"><option>W-2 Employment</option><option>1099 Self-Employment</option><option>Social Security</option><option>Pension</option><option>Interest</option><option>Refund</option><option>Transfer</option><option>Other Income</option></select></div>
+<div class="grid2"><div class="field"><label>Use</label><select id="ruleUse"><option value="business">Business</option><option value="personal">Personal</option><option value="mixed">Mixed</option></select></div><div class="field"><label>Business percentage</label><input id="ruleBusinessPct" type="number" min="0" max="100" value="100"></div></div>
+</div>
+<div class="actions"><button id="deleteRuleBtn" class="btn redbtn" onclick="deleteMerchantRule()">Delete</button><button class="btn" onclick="saveMerchantRule()">Save rule</button></div>
 </div></div>
-
 <div id="toast" class="toast"></div>
 <script>
 const GOOGLE_CLIENT_ID='926590237582-rlp1ub36guaqjntsc091d46dg7htq837.apps.googleusercontent.com';
@@ -121,89 +108,88 @@ async function onTxCategoryChange(){const sel=document.getElementById('txCategor
 async function onRuleCategoryChange(){const sel=document.getElementById('ruleCategory');if(sel.value!=='__new__'){sel.dataset.prev=sel.value;return}const prev=sel.dataset.prev||'',name=await addCustomCategoryFlow(v('ruleType'));updateRuleCategoryOptions();const target=name||prev;if(target&&[...sel.options].some(o=>o.value===target))sel.value=target;sel.dataset.prev=sel.value}
 function setReceiptCategory(i,val){const r=receiptCandidates[i];if(val!=='__new__'){r.category=val;return}addCustomCategoryFlow(r.type).then(n=>{if(n)r.category=n;renderReceiptReview()})}
 function isTaxPayment(e){return e.type==='expense'&&e.category===TAX_PAY_CAT}
-
 /* ---- cloud storage layer (replaces IndexedDB so data syncs across every device) ---- */
 let STORE={entries:[],imported_receipts:[],mileage:[],settings:[],merchant_rules:[]};
 let cloudSaveFailed=false;
 /* ---- password gate (app password kept by Muse for Gil) ---- */
 function appPassword(){return sessionStorage.getItem('mm_pw')||'';}
 async function apiFetch(url,opts){
-  opts=opts||{};
-  opts.headers=Object.assign({},opts.headers,{'x-app-password':appPassword()});
-  const r=await fetch(url,opts);
-  if(r.status===401){sessionStorage.removeItem('mm_pw');showPwGate(true);}
-  return r;
+opts=opts||{};
+opts.headers=Object.assign({},opts.headers,{'x-app-password':appPassword()});
+const r=await fetch(url,opts);
+if(r.status===401){sessionStorage.removeItem('mm_pw');showPwGate(true);}
+return r;
 }
 function showPwGate(bad){
-  let ov=document.getElementById('pwGate');
-  if(!ov){
-    ov=document.createElement('div');ov.id='pwGate';
-    ov.style.cssText='position:fixed;inset:0;background:#1a1a2e;display:flex;align-items:center;justify-content:center;z-index:99999;';
-    ov.innerHTML='<div style="background:#fff;padding:32px;border-radius:12px;max-width:320px;text-align:center;font-family:sans-serif;">'+
-      '<h2 style="margin:0 0 8px;">Money Manager</h2>'+
-      '<p id="pwMsg" style="color:#555;">Enter your password to open the app.</p>'+
-      '<input id="pwInput" type="password" style="width:100%;padding:10px;margin:8px 0;box-sizing:border-box;" autocomplete="current-password">'+
-      '<button id="pwGo" style="width:100%;padding:10px;background:#4a6cf7;color:#fff;border:none;border-radius:6px;font-size:16px;">Unlock</button></div>';
-    document.body.appendChild(ov);
-    const go=()=>{const v=document.getElementById('pwInput').value;if(!v)return;sessionStorage.setItem('mm_pw',v);ov.style.display='none';loadStore();};
-    document.getElementById('pwGo').onclick=go;
-    document.getElementById('pwInput').onkeydown=e=>{if(e.key==='Enter')go();};
-  }
-  if(bad){const m=document.getElementById('pwMsg');if(m)m.textContent='Wrong password. Try again.';}
-  ov.style.display='flex';
-  setTimeout(()=>{const i=document.getElementById('pwInput');if(i)i.focus();},60);
+let ov=document.getElementById('pwGate');
+if(!ov){
+ov=document.createElement('div');ov.id='pwGate';
+ov.style.cssText='position:fixed;inset:0;background:#1a1a2e;display:flex;align-items:center;justify-content:center;z-index:99999;';
+ov.innerHTML='<div style="background:#fff;padding:32px;border-radius:12px;max-width:320px;text-align:center;font-family:sans-serif;">'+
+'<h2 style="margin:0 0 8px;">Money Manager</h2>'+
+'<p id="pwMsg" style="color:#555;">Enter your password to open the app.</p>'+
+'<input id="pwInput" type="password" style="width:100%;padding:10px;margin:8px 0;box-sizing:border-box;" autocomplete="current-password">'+
+'<button id="pwGo" style="width:100%;padding:10px;background:#4a6cf7;color:#fff;border:none;border-radius:6px;font-size:16px;">Unlock</button></div>';
+document.body.appendChild(ov);
+const go=()=>{const v=document.getElementById('pwInput').value;if(!v)return;sessionStorage.setItem('mm_pw',v);ov.style.display='none';loadStore();};
+document.getElementById('pwGo').onclick=go;
+document.getElementById('pwInput').onkeydown=e=>{if(e.key==='Enter')go();};
+}
+if(bad){const m=document.getElementById('pwMsg');if(m)m.textContent='Wrong password. Try again.';}
+ov.style.display='flex';
+setTimeout(()=>{const i=document.getElementById('pwInput');if(i)i.focus();},60);
 }
 async function loadStore(){
-  try{
-    const res=await apiFetch('/api/data');
-    if(res.status===401)return;
-    if(!res.ok)throw new Error('bad response');
-    const d=await res.json();
-    STORE.entries=d.entries||[];
-    STORE.imported_receipts=d.imported_receipts||[];
-    STORE.mileage=d.mileage||[];
-    STORE.settings=d.settings||[];
-    STORE.merchant_rules=d.merchant_rules||[];
-  }catch(e){
-    cloudSaveFailed=true;
-    alert('Could not reach the cloud database. You may be offline, or the database is not set up yet.');
-  }
-  initialize();
+try{
+const res=await apiFetch('/api/data');
+if(res.status===401)return;
+if(!res.ok)throw new Error('bad response');
+const d=await res.json();
+STORE.entries=d.entries||[];
+STORE.imported_receipts=d.imported_receipts||[];
+STORE.mileage=d.mileage||[];
+STORE.settings=d.settings||[];
+STORE.merchant_rules=d.merchant_rules||[];
+}catch(e){
+cloudSaveFailed=true;
+alert('Could not reach the cloud database. You may be offline, or the database is not set up yet.');
+}
+initialize();
 }
 let suspendPersist=false;
 async function persistStore(){
-  if(suspendPersist)return;
-  try{
-    const res=await apiFetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(STORE)});
-    if(res.status===401)return;
-    if(!res.ok)throw new Error('bad response');
-    cloudSaveFailed=false;
-  }catch(e){
-    cloudSaveFailed=true;
-    alert('Could not save to the cloud database. Check your connection and try again — your last change may not have been saved.');
-  }
+if(suspendPersist)return;
+try{
+const res=await apiFetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(STORE)});
+if(res.status===401)return;
+if(!res.ok)throw new Error('bad response');
+cloudSaveFailed=false;
+}catch(e){
+cloudSaveFailed=true;
+alert('Could not save to the cloud database. Check your connection and try again — your last change may not have been saved.');
+}
 }
 function keyPathFor(store){return store==='imported_receipts'?'messageId':store==='settings'?'key':'id';}
 function nextId(store){let max=0;STORE[store].forEach(x=>{const n=Number(x.id);if(!isNaN(n)&&n>max)max=n;});return max+1;}
 async function getAll(store){return STORE[store]||[];}
 async function put(store,value){
-  const kp=keyPathFor(store);
-  const idx=STORE[store].findIndex(x=>x[kp]===value[kp]);
-  if(idx>=0)STORE[store][idx]=value;else STORE[store].push(value);
-  await persistStore();
-  return value[kp];
+const kp=keyPathFor(store);
+const idx=STORE[store].findIndex(x=>x[kp]===value[kp]);
+if(idx>=0)STORE[store][idx]=value;else STORE[store].push(value);
+await persistStore();
+return value[kp];
 }
 async function add(store,value){
-  const kp=keyPathFor(store);
-  if(kp==='id'&&(value.id===undefined||value.id===null))value.id=nextId(store);
-  STORE[store].push(value);
-  await persistStore();
-  return value[kp];
+const kp=keyPathFor(store);
+if(kp==='id'&&(value.id===undefined||value.id===null))value.id=nextId(store);
+STORE[store].push(value);
+await persistStore();
+return value[kp];
 }
 async function del(store,key){
-  const kp=keyPathFor(store);
-  STORE[store]=STORE[store].filter(x=>x[kp]!==key);
-  await persistStore();
+const kp=keyPathFor(store);
+STORE[store]=STORE[store].filter(x=>x[kp]!==key);
+await persistStore();
 }
 if(appPassword()){loadStore();}else{showPwGate(false);}
 async function initialize(){buildYearOptions();buildMonthFilter();document.getElementById('todayLabel').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});await loadSettings();await seedMerchantRules();await loadMerchantRules();await migrateLegacyDescriptions();await loadData();renderSavedLocations();refreshAll();}
@@ -226,7 +212,7 @@ function setText(id,v){document.getElementById(id).textContent=v}
 function renderRecent(es){const box=document.getElementById('recentList'),items=[...es].sort((a,b)=>(b.date||'').localeCompare(a.date||'')||Number(b.id)-Number(a.id)).slice(0,6);box.innerHTML=items.length?items.map(txHtml).join(''):'<div class="empty panel">No transactions yet.</div>'}
 function renderRecurring(es){const items=es.filter(e=>e.recurring&&e.recurring!=='none').slice(-5).reverse(),box=document.getElementById('recurringList');box.innerHTML=items.length?items.map(e=>`<div class="tx"><div class="tx-icon">↻</div><div class="tx-main"><div class="tx-title">${esc(e.description)}</div><div class="tx-meta">${esc(e.recurring)} · ${esc(e.owner||'Gil')}</div></div><div class="tx-amount ${e.type==='income'?'green':'red'}">${money(e.amount)}</div></div>`).join(''):'<div class="empty panel">No recurring items marked.</div>'}
 function renderChart(es){const months=Array.from({length:12},(_,i)=>({m:i,inc:0,exp:0}));es.forEach(e=>{const m=Number((e.date||'').slice(5,7))-1;if(m>=0){if(e.type==='income')months[m].inc+=Number(e.amount);else months[m].exp+=Number(e.amount)}});const max=Math.max(1,...months.map(x=>Math.max(x.inc,x.exp)));document.getElementById('monthlyChart').innerHTML=months.map(x=>`<div class="bar-wrap" title="Income ${money(x.inc)} · Expenses ${money(x.exp)}"><div style="display:flex;align-items:flex-end;gap:2px;height:110px"><div class="bar" style="height:${x.inc/max*100}%;width:50%;background:var(--green)"></div><div class="bar" style="height:${x.exp/max*100}%;width:50%;background:var(--red)"></div></div><div class="bar-label">${new Date(2020,x.m).toLocaleString('en',{month:'narrow'})}</div></div>`).join('')}
-function txHtml(e){return `<div class="tx" onclick="openTransaction(null,${Number(e.id)})"><div class="tx-icon">${e.type==='income'?'＋':'−'}</div><div class="tx-main"><div class="tx-title">${esc(e.description||'Untitled')}<span class="owner">${esc(e.owner||'Gil')}</span>${e.isTip?'<span class="owner">Tip</span>':''}</div><div class="tx-meta">${dateFmt(e.date)} · ${esc(e.category||'Uncategorized')} · ${esc(e.use||'business')}</div></div><div class="tx-amount ${e.type==='income'?'green':'red'}">${e.type==='income'?'+':'−'}${money(e.amount)}</div></div>`}
+function txHtml(e){return `<div class="tx" onclick="openTransaction(null,${Number(e.id)})"><div class="tx-icon">${e.type==='income'?'＋':'−'}</div><div class="tx-main"><div class="tx-title">${esc(e.description||'Untitled')}<span class="owner">${esc(e.owner||'Gil')}</span>${e.isTip?'<span class="owner">Tip</span>':''}</div><div class="tx-meta">${dateFmt(e.date)} · ${esc(e.category||'Uncategorized')} · ${esc(e.use||'business')}</div></div><div class="tx-amount ${e.type==='income'?'green':'red'}">${e.type==='income'?'+':'−'}${money(e.amount)}</div><button class="btn secondary small" style="flex-shrink:0" onclick="event.stopPropagation();openTransaction(null,${Number(e.id)})">Edit</button></div>`}
 function renderTransactions(){let es=yearEntries();const q=document.getElementById('searchTx').value.toLowerCase(),owner=document.getElementById('filterOwner').value,type=document.getElementById('filterType').value,use=document.getElementById('filterBusiness').value,month=document.getElementById('filterMonth').value;if(q)es=es.filter(e=>JSON.stringify(e).toLowerCase().includes(q));if(owner!=='all')es=es.filter(e=>e.owner===owner);if(type!=='all')es=es.filter(e=>e.type===type);if(use==='business')es=es.filter(e=>e.use!=='personal');if(use==='personal')es=es.filter(e=>e.use==='personal');if(month!=='all')es=es.filter(e=>(e.date||'').slice(5,7)===month);es.sort((a,b)=>(b.date||'').localeCompare(a.date||'')||Number(b.id)-Number(a.id));document.getElementById('transactionList').innerHTML=es.length?es.map(txHtml).join(''):'<div class="empty panel">No matching transactions.</div>'}
 function setTxType(type){txType=type;document.getElementById('incomeToggle').className=type==='income'?'active income':'';document.getElementById('expenseToggle').className=type==='expense'?'active expense':'';const cats=type==='income'?incomeCats:expenseCats,sel=document.getElementById('txCategory'),old=sel.value;sel.innerHTML=cats.map(c=>`<option>${esc(c)}</option>`).join('')+'<option value="__new__">+ Add new category…</option>';if(cats.includes(old))sel.value=old;document.getElementById('incomeTypeRow').style.display=type==='income'?'block':'none';document.getElementById('txTipRow').style.display=type==='income'?'flex':'none';if(type!=='income')document.getElementById('txIsTip').checked=false}
 function autoTipFromCategory(){if(txType==='income'&&document.getElementById('txCategory').value==='Tips / cash income')document.getElementById('txIsTip').checked=true}
@@ -237,116 +223,114 @@ function v(id){return document.getElementById(id).value}
 function openMileage(id=null){editMileId=id?Number(id):null;const e=editMileId?mileage.find(x=>Number(x.id)===editMileId):null;document.getElementById('mileModalTitle').textContent=e?'Edit mileage':'Add mileage';document.getElementById('deleteMileBtn').style.visibility=e?'visible':'hidden';document.getElementById('mileOwner').value=e?.owner||'Amporn';document.getElementById('mileDate').value=e?.date||new Date().toISOString().slice(0,10);document.getElementById('milePurpose').value=e?.purpose||'';document.getElementById('mileType').value=e?.tripType||'varying';document.getElementById('mileFrom').value=e?.from||'';document.getElementById('mileTo').value=e?.to||'';document.getElementById('mileUnit').value=e?.unit||'mi';document.getElementById('mileMiles').value=e?(e.enteredDistance??(e.unit==='km'?Number(e.miles||0)*1.609344:e.miles)):'';document.getElementById('mileNotes').value=e?.notes||'';renderSavedLocations();openModal('mileModal')}
 async function saveMileage(){const distance=Number(v('mileMiles')),purpose=v('milePurpose').trim(),unit=v('mileUnit');if(!distance||!purpose)return alert('Please enter the business purpose and distance.');const from=v('mileFrom').trim(),to=v('mileTo').trim(),miles=unit==='km'?distance/1.609344:distance;const obj={owner:v('mileOwner'),date:v('mileDate'),purpose,tripType:v('mileType'),from,to,miles,enteredDistance:distance,unit,notes:v('mileNotes').trim()};if(document.getElementById('rememberLocations').checked){const locs=[...(settings.savedLocations||[]),from,to].map(x=>x.trim()).filter(Boolean);settings.savedLocations=[...new Set(locs)];await put('settings',{key:'savedLocations',value:settings.savedLocations});renderSavedLocations()}if(editMileId){obj.id=editMileId;await put('mileage',obj)}else obj.id=await add('mileage',obj);await loadData();closeModal('mileModal');refreshAll();toast(editMileId?'Mileage updated':'Mileage added')}
 async function deleteCurrentMileage(){if(!editMileId||!confirm('Delete this mileage trip?'))return;await del('mileage',editMileId);await loadData();closeModal('mileModal');refreshAll();toast('Mileage deleted')}
-function renderMileage(){const ms=yearMileage().sort((a,b)=>(b.date||'').localeCompare(a.date||'')),total=sum(ms,'miles'),deductibleMiles=sum(ms.filter(m=>m.tripType!=='regular'),'miles');setText('mileTotal',total.toFixed(1));setText('mileDeduction',money(deductibleMiles*Number(settings.mileageRate||0)));setText('mileTrips',ms.length);document.getElementById('mileageList').innerHTML=ms.length?ms.map(m=>{const unit=m.unit||'mi',shown=m.enteredDistance??(unit==='km'?Number(m.miles||0)*1.609344:m.miles);return `<div class="tx" onclick="openMileage(${Number(m.id)})"><div class="tx-icon">🚗</div><div class="tx-main"><div class="tx-title">${esc(m.purpose)}<span class="owner">${esc(m.owner)}</span>${m.tripType==='regular'?'<span class="owner">Regular workplace</span>':''}</div><div class="tx-meta">${dateFmt(m.date)} · ${esc(m.from)}${m.to?' → '+esc(m.to):''}</div></div><div class="tx-amount gold">${Number(shown).toFixed(1)} ${unit}</div></div>`}).join(''):'<div class="empty panel">No mileage trips yet.</div>'}
+function renderMileage(){const ms=yearMileage().sort((a,b)=>(b.date||'').localeCompare(a.date||'')),total=sum(ms,'miles'),deductibleMiles=sum(ms.filter(m=>m.tripType!=='regular'),'miles');setText('mileTotal',total.toFixed(1));setText('mileDeduction',money(deductibleMiles*Number(settings.mileageRate||0)));setText('mileTrips',ms.length);document.getElementById('mileageList').innerHTML=ms.length?ms.map(m=>{const unit=m.unit||'mi',shown=m.enteredDistance??(unit==='km'?Number(m.miles||0)*1.609344:m.miles);return `<div class="tx" onclick="openMileage(${Number(m.id)})"><div class="tx-icon">🚗</div><div class="tx-main"><div class="tx-title">${esc(m.purpose)}<span class="owner">${esc(m.owner)}</span>${m.tripType==='regular'?'<span class="owner">Regular workplace</span>':''}</div><div class="tx-meta">${dateFmt(m.date)} · ${esc(m.from)}${m.to?' → '+esc(m.to):''}</div></div><div class="tx-amount gold">${Number(shown).toFixed(1)} ${unit}</div><button class="btn secondary small" style="flex-shrink:0" onclick="event.stopPropagation();openMileage(${Number(m.id)})">Edit</button></div>`}).join(''):'<div class="empty panel">No mileage trips yet.</div>'}
 function ownerStats(owner){const es=yearEntries().filter(e=>e.owner===owner),inc=sum(es.filter(e=>e.type==='income'),'amount'),exp=sum(es.filter(e=>e.type==='expense'),'amount');return{inc,exp,net:inc-exp}}
 function businessProfit(owner){const es=yearEntries().filter(e=>e.owner===owner);return sum(es.filter(e=>e.type==='income'&&e.use!=='personal'),businessAmount)-sum(es.filter(e=>e.type==='expense'&&!isTaxPayment(e)),businessAmount)}
 function tipTotal(owner){return sum(yearEntries().filter(e=>e.type==='income'&&e.owner===owner&&e.isTip),'amount')}
 function renderTipsReport(){['Gil','Amporn'].forEach(owner=>{const total=tipTotal(owner),remaining=Math.max(0,TIPS_CAP-total),pct=Math.min(100,total/TIPS_CAP*100),prefix=owner==='Gil'?'gil':'amporn';setText(prefix+'Tips',money(total));const bar=document.getElementById(prefix+'TipsBar');if(bar)bar.style.width=pct.toFixed(1)+'%';const note=document.getElementById(prefix+'TipsNote');if(note)note.textContent=`${pct.toFixed(0)}% of the $25,000 cap used · ${money(remaining)} remaining`})}
 function renderReports(){const gp=businessProfit('Gil'),ap=businessProfit('Amporn'),js=ownerStats('Joint Household');setText('gilProfit',money(gp));setText('ampornProfit',money(ap));setText('jointFlow',money(js.net));const taxable=Math.max(0,gp)+Math.max(0,ap);setText('taxEstimate',money(taxable*Number(settings.taxRate||0)/100));renderTipsReport();document.getElementById('ownerReport').innerHTML=['Gil','Amporn','Joint Household'].map(o=>{const s=ownerStats(o);return`<tr><td>${o}</td><td>${money(s.inc)}</td><td>${money(s.exp)}</td><td>${money(s.net)}</td></tr>`}).join('');const cats={};yearEntries().filter(e=>e.type==='expense'&&e.use!=='personal'&&!isTaxPayment(e)).forEach(e=>cats[e.category||'Uncategorized']=(cats[e.category||'Uncategorized']||0)+businessAmount(e));document.getElementById('categoryReport').innerHTML=Object.entries(cats).sort((a,b)=>b[1]-a[1]).map(([c,a])=>`<tr><td>${esc(c)}</td><td>${money(a)}</td></tr>`).join('')||'<tr><td colspan="2">No business expenses.</td></tr>'}
-
 /* ---- Tax report for the accountant ---- */
 let taxView='both';
 function setTaxView(x){taxView=x;renderTaxReport()}
 function sumObj(o){return Object.values(o).reduce((a,b)=>a+b,0)}
 function taxFigures(owner){
- const es=yearEntries().filter(e=>e.owner===owner),inc=es.filter(e=>e.type==='income');
- const payers={},tipSrc={},otherInc={},expCats={};
- inc.filter(e=>e.isTip).forEach(e=>{const k=e.description||'Unknown source';tipSrc[k]=(tipSrc[k]||0)+Number(e.amount||0)});
- inc.filter(e=>!e.isTip&&e.use!=='personal').forEach(e=>{const k=e.description||'Unknown payer';payers[k]=(payers[k]||0)+businessAmount(e)});
- inc.filter(e=>!e.isTip&&e.use==='personal').forEach(e=>{const k=e.incomeType||e.category||'Other income';otherInc[k]=(otherInc[k]||0)+Number(e.amount||0)});
- es.filter(e=>e.type==='expense'&&!isTaxPayment(e)&&e.use!=='personal').forEach(e=>{const k=e.category||'Uncategorized';expCats[k]=(expCats[k]||0)+businessAmount(e)});
- const fees=sumObj(payers),tips=sumObj(tipSrc),other=sumObj(otherInc),expenses=sumObj(expCats),net=fees+tips-expenses;
- const payments=sum(es.filter(isTaxPayment),'amount');
- const ms=yearMileage().filter(m=>m.owner===owner);
- const varyingMiles=sum(ms.filter(m=>m.tripType!=='regular'),'miles'),regularMiles=sum(ms.filter(m=>m.tripType==='regular'),'miles');
- const mileDeduction=varyingMiles*Number(settings.mileageRate||0),afterMile=net-mileDeduction;
- const seNet=Math.max(0,afterMile)*0.9235,seTax=seNet>=400?seNet*0.153:0;
- return{payers,tipSrc,otherInc,expCats,fees,tips,other,expenses,net,payments,trips:ms.length,varyingMiles,regularMiles,mileDeduction,afterMile,seTax,tipsDeduction:Math.min(tips,TIPS_CAP)};
+const es=yearEntries().filter(e=>e.owner===owner),inc=es.filter(e=>e.type==='income');
+const payers={},tipSrc={},otherInc={},expCats={};
+inc.filter(e=>e.isTip).forEach(e=>{const k=e.description||'Unknown source';tipSrc[k]=(tipSrc[k]||0)+Number(e.amount||0)});
+inc.filter(e=>!e.isTip&&e.use!=='personal').forEach(e=>{const k=e.description||'Unknown payer';payers[k]=(payers[k]||0)+businessAmount(e)});
+inc.filter(e=>!e.isTip&&e.use==='personal').forEach(e=>{const k=e.incomeType||e.category||'Other income';otherInc[k]=(otherInc[k]||0)+Number(e.amount||0)});
+es.filter(e=>e.type==='expense'&&!isTaxPayment(e)&&e.use!=='personal').forEach(e=>{const k=e.category||'Uncategorized';expCats[k]=(expCats[k]||0)+businessAmount(e)});
+const fees=sumObj(payers),tips=sumObj(tipSrc),other=sumObj(otherInc),expenses=sumObj(expCats),net=fees+tips-expenses;
+const payments=sum(es.filter(isTaxPayment),'amount');
+const ms=yearMileage().filter(m=>m.owner===owner);
+const varyingMiles=sum(ms.filter(m=>m.tripType!=='regular'),'miles'),regularMiles=sum(ms.filter(m=>m.tripType==='regular'),'miles');
+const mileDeduction=varyingMiles*Number(settings.mileageRate||0),afterMile=net-mileDeduction;
+const seNet=Math.max(0,afterMile)*0.9235,seTax=seNet>=400?seNet*0.153:0;
+return{payers,tipSrc,otherInc,expCats,fees,tips,other,expenses,net,payments,trips:ms.length,varyingMiles,regularMiles,mileDeduction,afterMile,seTax,tipsDeduction:Math.min(tips,TIPS_CAP)};
 }
 function objRows(o,emptyText){const r=Object.entries(o).sort((a,b)=>b[1]-a[1]);return r.length?r.map(([k,x])=>`<tr><td>${esc(k)}</td><td>${money(x)}</td></tr>`).join(''):`<tr><td colspan="2" class="muted">${esc(emptyText)}</td></tr>`}
 function kvRows(pairs){return pairs.map(([k,x])=>`<tr><td>${esc(k)}</td><td>${x}</td></tr>`).join('')}
 function trBlock(title,rowsHtml,totalLabel,total){return `<div class="panel tr-block" style="margin-top:10px"><h3>${esc(title)}</h3><table class="table"><tbody>${rowsHtml}${totalLabel?`<tr><td><strong>${esc(totalLabel)}</strong></td><td><strong>${money(total)}</strong></td></tr>`:''}</tbody></table></div>`}
 function personTaxHtml(owner){
- const f=taxFigures(owner);
- const stats=`<div class="summary"><div class="stat"><small>Self-employment income</small><strong class="green">${money(f.fees+f.tips)}</strong></div><div class="stat"><small>Business expenses</small><strong class="red">${money(f.expenses)}</strong></div><div class="stat"><small>Net profit after mileage</small><strong class="gold">${money(f.afterMile)}</strong></div></div>`;
- const mileRows=kvRows([['Business trips logged',String(f.trips)],['Miles at varying locations (deduction estimate)',f.varyingMiles.toFixed(1)],['Miles to regular workplace (usually commuting)',f.regularMiles.toFixed(1)],['Mileage rate per mile',money(settings.mileageRate)],['Estimated mileage deduction',money(f.mileDeduction)]]);
- const planRows=kvRows([['Net profit before mileage',money(f.net)],['Estimated mileage deduction',money(f.mileDeduction)],['Net profit after mileage',money(f.afterMile)],['Self-employment tax estimate (15.3% of 92.35%)',money(f.seTax)],['Half of self-employment tax (deduction)',money(f.seTax/2)],['Qualified tips, deduction up to $25,000',money(f.tipsDeduction)]]);
- return `<div class="section"><div class="section-head"><h2>${esc(owner)}</h2></div>${stats}`+
-  trBlock('Business income by payer (tips are listed separately)',objRows(f.payers,'No business income recorded.'),'Total fees and pay',f.fees)+
-  trBlock('Tips received (kept separate from fees)',objRows(f.tipSrc,'No tips recorded.'),'Total tips',f.tips)+
-  trBlock('Business expenses by category',objRows(f.expCats,'No business expenses recorded.'),'Total business expenses',f.expenses)+
-  trBlock('Mileage',mileRows,'','')+
-  trBlock('Other income, not self-employment (W-2, Social Security, pension, and so on)',objRows(f.otherInc,'None recorded.'),'Total other income',f.other)+
-  trBlock('Estimated tax payments already made',kvRows([['Total paid this year',money(f.payments)]]),'','')+
-  trBlock('Rough planning figures',planRows,'','')+`</div>`;
+const f=taxFigures(owner);
+const stats=`<div class="summary"><div class="stat"><small>Self-employment income</small><strong class="green">${money(f.fees+f.tips)}</strong></div><div class="stat"><small>Business expenses</small><strong class="red">${money(f.expenses)}</strong></div><div class="stat"><small>Net profit after mileage</small><strong class="gold">${money(f.afterMile)}</strong></div></div>`;
+const mileRows=kvRows([['Business trips logged',String(f.trips)],['Miles at varying locations (deduction estimate)',f.varyingMiles.toFixed(1)],['Miles to regular workplace (usually commuting)',f.regularMiles.toFixed(1)],['Mileage rate per mile',money(settings.mileageRate)],['Estimated mileage deduction',money(f.mileDeduction)]]);
+const planRows=kvRows([['Net profit before mileage',money(f.net)],['Estimated mileage deduction',money(f.mileDeduction)],['Net profit after mileage',money(f.afterMile)],['Self-employment tax estimate (15.3% of 92.35%)',money(f.seTax)],['Half of self-employment tax (deduction)',money(f.seTax/2)],['Qualified tips, deduction up to $25,000',money(f.tipsDeduction)]]);
+return `<div class="section"><div class="section-head"><h2>${esc(owner)}</h2></div>${stats}`+
+trBlock('Business income by payer (tips are listed separately)',objRows(f.payers,'No business income recorded.'),'Total fees and pay',f.fees)+
+trBlock('Tips received (kept separate from fees)',objRows(f.tipSrc,'No tips recorded.'),'Total tips',f.tips)+
+trBlock('Business expenses by category',objRows(f.expCats,'No business expenses recorded.'),'Total business expenses',f.expenses)+
+trBlock('Mileage',mileRows,'','')+
+trBlock('Other income, not self-employment (W-2, Social Security, pension, and so on)',objRows(f.otherInc,'None recorded.'),'Total other income',f.other)+
+trBlock('Estimated tax payments already made',kvRows([['Total paid this year',money(f.payments)]]),'','')+
+trBlock('Rough planning figures',planRows,'','')+`</div>`;
 }
 function householdTaxHtml(){
- const g=taxFigures('Gil'),a=taxFigures('Amporn'),es=yearEntries().filter(e=>e.owner==='Joint Household');
- const jointInc={},jointExp={};
- es.filter(e=>e.type==='income').forEach(e=>{const k=e.description||'Unknown';jointInc[k]=(jointInc[k]||0)+Number(e.amount||0)});
- es.filter(e=>e.type==='expense'&&!isTaxPayment(e)).forEach(e=>{const k=e.category||'Uncategorized';jointExp[k]=(jointExp[k]||0)+Number(e.amount||0)});
- const jointPay=sum(es.filter(isTaxPayment),'amount');
- const totalPaid=g.payments+a.payments+jointPay;
- const rows=kvRows([['Combined net profit after mileage',money(g.afterMile+a.afterMile)],['Combined tips (Gil and Amporn)',money(g.tips+a.tips)],['Combined self-employment tax estimate',money(g.seTax+a.seTax)],['Combined estimated tax payments made',money(totalPaid)],['Combined mileage deduction estimate',money(g.mileDeduction+a.mileDeduction)]]);
- return `<div class="section"><div class="section-head"><h2>Household totals</h2></div>`+trBlock('Both of you combined',rows,'','')+
-  (Object.keys(jointInc).length?trBlock('Income marked Joint Household (tell your accountant whose it is)',objRows(jointInc,''),'Total',sumObj(jointInc)):'')+
-  (Object.keys(jointExp).length?trBlock('Expenses marked Joint Household',objRows(jointExp,''),'Total',sumObj(jointExp)):'')+`</div>`;
+const g=taxFigures('Gil'),a=taxFigures('Amporn'),es=yearEntries().filter(e=>e.owner==='Joint Household');
+const jointInc={},jointExp={};
+es.filter(e=>e.type==='income').forEach(e=>{const k=e.description||'Unknown';jointInc[k]=(jointInc[k]||0)+Number(e.amount||0)});
+es.filter(e=>e.type==='expense'&&!isTaxPayment(e)).forEach(e=>{const k=e.category||'Uncategorized';jointExp[k]=(jointExp[k]||0)+Number(e.amount||0)});
+const jointPay=sum(es.filter(isTaxPayment),'amount');
+const totalPaid=g.payments+a.payments+jointPay;
+const rows=kvRows([['Combined net profit after mileage',money(g.afterMile+a.afterMile)],['Combined tips (Gil and Amporn)',money(g.tips+a.tips)],['Combined self-employment tax estimate',money(g.seTax+a.seTax)],['Combined estimated tax payments made',money(totalPaid)],['Combined mileage deduction estimate',money(g.mileDeduction+a.mileDeduction)]]);
+return `<div class="section"><div class="section-head"><h2>Household totals</h2></div>`+trBlock('Both of you combined',rows,'','')+
+(Object.keys(jointInc).length?trBlock('Income marked Joint Household (tell your accountant whose it is)',objRows(jointInc,''),'Total',sumObj(jointInc)):'')+
+(Object.keys(jointExp).length?trBlock('Expenses marked Joint Household',objRows(jointExp,''),'Total',sumObj(jointExp)):'')+`</div>`;
 }
 function taxDataChecks(){
- const es=yearEntries(),out=[],year=selectedYear(),now=new Date();
- const other=es.filter(e=>/^other (income|expense)$/i.test(e.category||'')).length;
- if(other)out.push(`${other} transaction${other===1?' is':'s are'} in an "Other" category. Give them a real category so your accountant can use them.`);
- const bad=es.filter(e=>!e.description||e.description==='Untitled'||e.description==='Imported transaction').length;
- if(bad)out.push(`${bad} transaction${bad===1?' has':'s have'} no clear name. Open them on the Transactions tab and add the payer or vendor.`);
- const jointInc=es.filter(e=>e.type==='income'&&e.owner==='Joint Household').length;
- if(jointInc)out.push(`${jointInc} income entr${jointInc===1?'y is':'ies are'} marked Joint Household. Change them to Gil or Amporn so each person's income is right.`);
- const conflict=es.filter(e=>e.type==='income'&&e.incomeType==='1099 Self-Employment'&&e.use==='personal').length;
- if(conflict)out.push(`${conflict} income entr${conflict===1?'y is':'ies are'} typed 1099 Self-Employment but marked Personal. Check which is right.`);
- const lastMonth=year<now.getFullYear()?12:year===now.getFullYear()?now.getMonth()+1:0;
- const haveMonths=new Set(es.map(e=>Number((e.date||'').slice(5,7))));
- const missing=[];for(let m=1;m<=lastMonth;m++)if(!haveMonths.has(m))missing.push(new Date(2020,m-1).toLocaleString('en',{month:'long'}));
- if(missing.length)out.push(`No records at all for: ${missing.join(', ')}. If you have bank statements for those months, import them.`);
- if(!yearMileage().some(m=>m.owner==='Amporn'))out.push('No mileage logged for Amporn yet. If she drives between salons, log those trips.');
- if(!es.some(e=>e.type==='expense'&&isTaxPayment(e)))out.push('No estimated tax payments recorded. If you made any, add them as an expense with the category "Estimated tax payment".');
- if(!es.some(e=>e.isTip&&e.owner==='Amporn'))out.push('No tips marked for Amporn. Mark her tip income so it is counted separately.');
- return out;
+const es=yearEntries(),out=[],year=selectedYear(),now=new Date();
+const other=es.filter(e=>/^other (income|expense)$/i.test(e.category||'')).length;
+if(other)out.push(`${other} transaction${other===1?' is':'s are'} in an "Other" category. Give them a real category so your accountant can use them.`);
+const bad=es.filter(e=>!e.description||e.description==='Untitled'||e.description==='Imported transaction').length;
+if(bad)out.push(`${bad} transaction${bad===1?' has':'s have'} no clear name. Open them on the Transactions tab and add the payer or vendor.`);
+const jointInc=es.filter(e=>e.type==='income'&&e.owner==='Joint Household').length;
+if(jointInc)out.push(`${jointInc} income entr${jointInc===1?'y is':'ies are'} marked Joint Household. Change them to Gil or Amporn so each person's income is right.`);
+const conflict=es.filter(e=>e.type==='income'&&e.incomeType==='1099 Self-Employment'&&e.use==='personal').length;
+if(conflict)out.push(`${conflict} income entr${conflict===1?'y is':'ies are'} typed 1099 Self-Employment but marked Personal. Check which is right.`);
+const lastMonth=year<now.getFullYear()?12:year===now.getFullYear()?now.getMonth()+1:0;
+const haveMonths=new Set(es.map(e=>Number((e.date||'').slice(5,7))));
+const missing=[];for(let m=1;m<=lastMonth;m++)if(!haveMonths.has(m))missing.push(new Date(2020,m-1).toLocaleString('en',{month:'long'}));
+if(missing.length)out.push(`No records at all for: ${missing.join(', ')}. If you have bank statements for those months, import them.`);
+if(!yearMileage().some(m=>m.owner==='Amporn'))out.push('No mileage logged for Amporn yet. If she drives between salons, log those trips.');
+if(!es.some(e=>e.type==='expense'&&isTaxPayment(e)))out.push('No estimated tax payments recorded. If you made any, add them as an expense with the category "Estimated tax payment".');
+if(!es.some(e=>e.isTip&&e.owner==='Amporn'))out.push('No tips marked for Amporn. Mark her tip income so it is counted separately.');
+return out;
 }
 function renderTaxReport(){
- const body=document.getElementById('taxReportBody'),pills=document.getElementById('taxViewPills');if(!body||!pills)return;
- const views=[['both','Both'],['Gil','Gil'],['Amporn','Amporn']];
- pills.innerHTML=views.map(([k,l])=>`<button class="pill ${taxView===k?'active':''}" onclick="setTaxView('${k}')">${l}</button>`).join('');
- const checks=taxDataChecks(),year=selectedYear();
- const header=`<div class="print-only"><h1 style="font-family:Georgia,serif">Tax records for ${year}</h1><p>Prepared from Gil & Amporn Money Manager on ${new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}. Figures marked estimate are for planning only. The accountant makes the final decisions.</p></div>`;
- const checkHtml=`<div class="section no-print"><div class="section-head"><h2>Check before you send</h2></div>${checks.length?checks.map(c=>`<div class="check-item">${esc(c)}</div>`).join(''):'<div class="check-item check-ok">Everything looks complete. Nothing needs attention.</div>'}</div>`;
- let people='';
- if(taxView==='both')people=householdTaxHtml()+personTaxHtml('Gil')+personTaxHtml('Amporn');
- else people=personTaxHtml(taxView);
- const note=`<p class="muted" style="margin-top:14px">Self-employment tax and mileage figures are rough planning estimates. Mileage for driving to a regular workplace is usually treated as commuting. Confirm everything, including the tips deduction, with a qualified tax professional.</p>`;
- body.innerHTML=header+checkHtml+people+note;
+const body=document.getElementById('taxReportBody'),pills=document.getElementById('taxViewPills');if(!body||!pills)return;
+const views=[['both','Both'],['Gil','Gil'],['Amporn','Amporn']];
+pills.innerHTML=views.map(([k,l])=>`<button class="pill ${taxView===k?'active':''}" onclick="setTaxView('${k}')">${l}</button>`).join('');
+const checks=taxDataChecks(),year=selectedYear();
+const header=`<div class="print-only"><h1 style="font-family:Georgia,serif">Tax records for ${year}</h1><p>Prepared from Gil & Amporn Money Manager on ${new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}. Figures marked estimate are for planning only. The accountant makes the final decisions.</p></div>`;
+const checkHtml=`<div class="section no-print"><div class="section-head"><h2>Check before you send</h2></div>${checks.length?checks.map(c=>`<div class="check-item">${esc(c)}</div>`).join(''):'<div class="check-item check-ok">Everything looks complete. Nothing needs attention.</div>'}</div>`;
+let people='';
+if(taxView==='both')people=householdTaxHtml()+personTaxHtml('Gil')+personTaxHtml('Amporn');
+else people=personTaxHtml(taxView);
+const note=`<p class="muted" style="margin-top:14px">Self-employment tax and mileage figures are rough planning estimates. Mileage for driving to a regular workplace is usually treated as commuting. Confirm everything, including the tips deduction, with a qualified tax professional.</p>`;
+body.innerHTML=header+checkHtml+people+note;
 }
 function exportTaxReportCSV(){
- const rows=[['Person','Section','Item','Amount']];
- ['Gil','Amporn'].forEach(o=>{const f=taxFigures(o);
-  Object.entries(f.payers).forEach(([k,x])=>rows.push([o,'Business income by payer',k,x.toFixed(2)]));
-  rows.push([o,'Business income by payer','TOTAL fees and pay',f.fees.toFixed(2)]);
-  Object.entries(f.tipSrc).forEach(([k,x])=>rows.push([o,'Tips',k,x.toFixed(2)]));
-  rows.push([o,'Tips','TOTAL tips',f.tips.toFixed(2)]);
-  Object.entries(f.expCats).forEach(([k,x])=>rows.push([o,'Business expenses',k,x.toFixed(2)]));
-  rows.push([o,'Business expenses','TOTAL business expenses',f.expenses.toFixed(2)]);
-  Object.entries(f.otherInc).forEach(([k,x])=>rows.push([o,'Other income (not self-employment)',k,x.toFixed(2)]));
-  rows.push([o,'Mileage','Trips logged',String(f.trips)]);
-  rows.push([o,'Mileage','Miles at varying locations',f.varyingMiles.toFixed(1)]);
-  rows.push([o,'Mileage','Miles to regular workplace',f.regularMiles.toFixed(1)]);
-  rows.push([o,'Mileage','Estimated mileage deduction',f.mileDeduction.toFixed(2)]);
-  rows.push([o,'Estimated tax payments','Total paid',f.payments.toFixed(2)]);
-  rows.push([o,'Planning figures','Net profit before mileage',f.net.toFixed(2)]);
-  rows.push([o,'Planning figures','Net profit after mileage',f.afterMile.toFixed(2)]);
-  rows.push([o,'Planning figures','Self-employment tax estimate',f.seTax.toFixed(2)]);
-  rows.push([o,'Planning figures','Qualified tips deduction (up to 25000)',f.tipsDeduction.toFixed(2)]);
- });
- download(`tax-report-${selectedYear()}.csv`,rows.map(r=>r.map(csv).join(',')).join('\n'),'text/csv');
+const rows=[['Person','Section','Item','Amount']];
+['Gil','Amporn'].forEach(o=>{const f=taxFigures(o);
+Object.entries(f.payers).forEach(([k,x])=>rows.push([o,'Business income by payer',k,x.toFixed(2)]));
+rows.push([o,'Business income by payer','TOTAL fees and pay',f.fees.toFixed(2)]);
+Object.entries(f.tipSrc).forEach(([k,x])=>rows.push([o,'Tips',k,x.toFixed(2)]));
+rows.push([o,'Tips','TOTAL tips',f.tips.toFixed(2)]);
+Object.entries(f.expCats).forEach(([k,x])=>rows.push([o,'Business expenses',k,x.toFixed(2)]));
+rows.push([o,'Business expenses','TOTAL business expenses',f.expenses.toFixed(2)]);
+Object.entries(f.otherInc).forEach(([k,x])=>rows.push([o,'Other income (not self-employment)',k,x.toFixed(2)]));
+rows.push([o,'Mileage','Trips logged',String(f.trips)]);
+rows.push([o,'Mileage','Miles at varying locations',f.varyingMiles.toFixed(1)]);
+rows.push([o,'Mileage','Miles to regular workplace',f.regularMiles.toFixed(1)]);
+rows.push([o,'Mileage','Estimated mileage deduction',f.mileDeduction.toFixed(2)]);
+rows.push([o,'Estimated tax payments','Total paid',f.payments.toFixed(2)]);
+rows.push([o,'Planning figures','Net profit before mileage',f.net.toFixed(2)]);
+rows.push([o,'Planning figures','Net profit after mileage',f.afterMile.toFixed(2)]);
+rows.push([o,'Planning figures','Self-employment tax estimate',f.seTax.toFixed(2)]);
+rows.push([o,'Planning figures','Qualified tips deduction (up to 25000)',f.tipsDeduction.toFixed(2)]);
+});
+download(`tax-report-${selectedYear()}.csv`,rows.map(r=>r.map(csv).join(',')).join('\n'),'text/csv');
 }
-
 function openSettings(){document.getElementById('taxRate').value=settings.taxRate;document.getElementById('mileageRate').value=settings.mileageRate;document.getElementById('clientIdInput').value=settings.clientId;document.getElementById('savedLocationsInput').value=(settings.savedLocations||[]).join('\n');document.getElementById('customExpenseInput').value=(settings.customExpenseCats||[]).join('\n');document.getElementById('customIncomeInput').value=(settings.customIncomeCats||[]).join('\n');openModal('settingsModal')}
 async function saveSettings(){settings.taxRate=Number(v('taxRate'))||0;settings.mileageRate=Number(v('mileageRate'))||0;settings.savedLocations=[...new Set(v('savedLocationsInput').split(/\n/).map(x=>x.trim()).filter(Boolean))];settings.customExpenseCats=[...new Set(v('customExpenseInput').split(/\n/).map(x=>x.trim()).filter(Boolean))];settings.customIncomeCats=[...new Set(v('customIncomeInput').split(/\n/).map(x=>x.trim()).filter(Boolean))];applyCustomCategories();settings.clientId=v('clientIdInput').trim()||GOOGLE_CLIENT_ID;localStorage.setItem('gilGoogleClientId',settings.clientId);for(const [key,value] of Object.entries(settings))await put('settings',{key,value});renderSavedLocations();closeModal('settingsModal');refreshAll();toast('Settings saved')}
 function openModal(id){document.getElementById(id).classList.add('open')}function closeModal(id){document.getElementById(id).classList.remove('open')}
@@ -357,19 +341,16 @@ async function exportBackup(){const imported=await getAll('imported_receipts');c
 function download(name,text,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
 async function restoreBackup(ev){const file=ev.target.files[0];if(!file)return;try{const data=JSON.parse(await file.text());if(!data||typeof data!=='object')throw new Error('Invalid backup');if(!confirm('Restore this backup? Existing records with matching IDs may be replaced.'))return;for(const x of data.entries||[])await put('entries',x);for(const x of data.mileage||[])await put('mileage',x);for(const [key,value] of Object.entries(data.settings||{}))await put('settings',{key,value});for(const x of data.imported||data.importedReceipts||[])await put('imported_receipts',x);for(const x of data.merchantRules||data.merchant_rules||[])await put('merchant_rules',x);await loadSettings();await loadMerchantRules();await loadData();refreshAll();toast(`Backup restored${data.version?` (version ${data.version})`:''}`)}catch(e){alert('That backup file could not be read: '+e.message)}ev.target.value=''}
 async function clearAllData(){if(!confirm('This will delete every transaction and mileage trip for everyone using this app. Continue?'))return;if(!confirm('Final warning: this cannot be undone unless you made a backup. Delete everything?'))return;STORE.entries=[];STORE.mileage=[];STORE.imported_receipts=[];await persistStore();await loadData();refreshAll();toast('All records cleared')}
-function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
-
-
-
+let toastTimer=null;function toast(msg){const t=document.getElementById('toast');if(!t)return;t.textContent=msg;t.classList.add('show');if(toastTimer)clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3000)}
 const seededMerchantRules=[
- {matchText:'THAI TIME LLC',name:'Naam Khao',type:'income',owner:'Gil',category:'Music income',incomeType:'1099 Self-Employment',use:'business',businessPct:100,seeded:true},
- {matchText:'HOUSTON SHOE HOSPITAL',name:'Houston Shoe Hospital',type:'income',owner:'Gil',category:'Other income',incomeType:'W-2 Employment',use:'personal',businessPct:0,seeded:true},
- {matchText:'SSA TREAS 310',name:'Social Security',type:'income',owner:'Gil',category:'Social Security',incomeType:'Social Security',use:'personal',businessPct:0,seeded:true},
- {matchText:'OPENAI',name:'OpenAI / ChatGPT',type:'expense',owner:'Gil',category:'Software / subscriptions',incomeType:'',use:'business',businessPct:100,seeded:true},
- {matchText:'CHATGPT',name:'OpenAI / ChatGPT',type:'expense',owner:'Gil',category:'Software / subscriptions',incomeType:'',use:'business',businessPct:100,seeded:true},
- {matchText:'ANTHROPIC',name:'Claude',type:'expense',owner:'Gil',category:'Software / subscriptions',incomeType:'',use:'business',businessPct:100,seeded:true},
- {matchText:'IONOS',name:'IONOS',type:'expense',owner:'Gil',category:'Internet',incomeType:'',use:'business',businessPct:100,seeded:true},
- {matchText:'SPOTIFY',name:'Spotify',type:'expense',owner:'Gil',category:'Software / subscriptions',incomeType:'',use:'business',businessPct:100,seeded:true}
+{matchText:'THAI TIME LLC',name:'Naam Khao',type:'income',owner:'Gil',category:'Music income',incomeType:'1099 Self-Employment',use:'business',businessPct:100,seeded:true},
+{matchText:'HOUSTON SHOE HOSPITAL',name:'Houston Shoe Hospital',type:'income',owner:'Gil',category:'Other income',incomeType:'W-2 Employment',use:'personal',businessPct:0,seeded:true},
+{matchText:'SSA TREAS 310',name:'Social Security',type:'income',owner:'Gil',category:'Social Security',incomeType:'Social Security',use:'personal',businessPct:0,seeded:true},
+{matchText:'OPENAI',name:'OpenAI / ChatGPT',type:'expense',owner:'Gil',category:'Software / subscriptions',incomeType:'',use:'business',businessPct:100,seeded:true},
+{matchText:'CHATGPT',name:'OpenAI / ChatGPT',type:'expense',owner:'Gil',category:'Software / subscriptions',incomeType:'',use:'business',businessPct:100,seeded:true},
+{matchText:'ANTHROPIC',name:'Claude',type:'expense',owner:'Gil',category:'Software / subscriptions',incomeType:'',use:'business',businessPct:100,seeded:true},
+{matchText:'IONOS',name:'IONOS',type:'expense',owner:'Gil',category:'Internet',incomeType:'',use:'business',businessPct:100,seeded:true},
+{matchText:'SPOTIFY',name:'Spotify',type:'expense',owner:'Gil',category:'Software / subscriptions',incomeType:'',use:'business',businessPct:100,seeded:true}
 ];
 function normalizeMerchantText(s){return String(s||'').normalize('NFKD').replace(/[’‘]/g,"'").toUpperCase().replace(/\bHOUSTON SHOE HOS\b/g,'HOUSTON SHOE HOSPITAL').replace(/\bGOOGLE\s*\*\s*CLAUDE(?:\s+BY)?\b/g,'ANTHROPIC').replace(/^(?:SQ|TST|PAYPAL|PP)\s*\*?\s*/,'').replace(/\b(?:PURCHASE AUTHORIZED ON|PURCHASE AUTHORIZED|DEBIT CARD PURCHASE|CARD PURCHASE|CHECKCARD|POS PURCHASE|ACH DEBIT|ACH CREDIT|RECURRING PAYMENT|ONLINE PAYMENT|ONLINE TRANSFER)\b/g,' ').replace(/\b(?:CARD|ACCT|ACCOUNT|TERMINAL|TERM|TRACE|REFERENCE|REF|AUTH|TRANSACTION|TRANS|ID)\s*(?:NO|NUMBER)?\s*[A-Z0-9-]{4,}\b/g,' ').replace(/\b(?:X{2,}|\*{2,})\d{2,4}\b/g,' ').replace(/\b\d{4,}\b/g,' ').replace(/\b(?:STORE|LOCATION|LOC|TERMINAL|TERM|REGISTER)\b/g,' ').replace(/\s+(?:HOUSTON|AUSTIN|DALLAS|SAN ANTONIO|FORT WORTH|KATY|SUGAR LAND|THE WOODLANDS|SPRING|CYPRESS)\s+(?:TX|TEXAS)\s*$/,' ').replace(/[^A-Z0-9]+/g,' ').replace(/\b(?:PURCHASE|AUTHORIZED|RECURRING|PAYMENT|DEBIT|CREDIT|CARD|ACH|POS|ONLINE|THE)\b/g,' ').replace(/\s+/g,' ').trim()}
 function merchantTokens(s){return normalizeMerchantText(s).split(' ').filter(x=>x.length>1&&!/^(LLC|INC|CORP|CO|USA|US|ZELLE|FROM)$/.test(x))}
@@ -387,28 +368,27 @@ function addMerchantRule(){editRuleId=null;document.getElementById('merchantEdit
 function editMerchantRule(id){const r=merchantRulesData.find(x=>Number(x.id)===Number(id));if(!r)return;editRuleId=Number(id);document.getElementById('merchantEditTitle').textContent='Edit merchant rule';document.getElementById('deleteRuleBtn').style.visibility='visible';document.getElementById('ruleMatch').value=r.matchText||'';document.getElementById('ruleName').value=r.name||'';document.getElementById('ruleType').value=r.type||'expense';document.getElementById('ruleOwner').value=r.owner||'Gil';updateRuleCategoryOptions();if(![...document.getElementById('ruleCategory').options].some(o=>o.value===r.category))document.getElementById('ruleCategory').add(new Option(r.category,r.category));document.getElementById('ruleCategory').value=r.category;document.getElementById('ruleIncomeType').value=r.incomeType||'Other Income';document.getElementById('ruleUse').value=r.use||'business';document.getElementById('ruleBusinessPct').value=Number(r.businessPct??100);openModal('merchantEditModal')}
 async function saveMerchantRule(){const rawMatch=v('ruleMatch').trim(),name=v('ruleName').trim(),matchText=normalizeMerchantText(rawMatch);if(!matchText||!name)return alert('Enter the bank description and display name.');const duplicate=merchantRulesData.find(x=>Number(x.id)!==Number(editRuleId)&&normalizeMerchantText(x.matchText)===matchText);const existing=editRuleId?merchantRulesData.find(x=>Number(x.id)===editRuleId):duplicate;const rule={matchText,name,type:v('ruleType'),owner:v('ruleOwner'),category:v('ruleCategory'),incomeType:v('ruleType')==='income'?v('ruleIncomeType'):'',use:v('ruleUse'),businessPct:Math.min(100,Math.max(0,Number(v('ruleBusinessPct'))||0)),createdAt:existing?.createdAt||new Date().toISOString(),updatedAt:new Date().toISOString()};if(existing)rule.id=existing.id;await put('merchant_rules',rule);await loadMerchantRules();closeModal('merchantEditModal');renderMerchantLibrary();toast(duplicate?'Existing merchant rule updated':'Merchant rule saved')}
 async function deleteMerchantRule(){if(!editRuleId||!confirm('Delete this merchant rule?'))return;await del('merchant_rules',editRuleId);await loadMerchantRules();closeModal('merchantEditModal');renderMerchantLibrary();toast('Merchant rule deleted')}
-
 async function migrateLegacyDescriptions(){const all=await getAll('entries');for(const e of all){let d=(e.description||e.vendor||e.merchant||e.payee||e.title||e.name||'').trim();if(!d&&e.rawDescription)d=cleanBankDescription(e.rawDescription);if(d&&d!==e.description){e.description=d;await put('entries',e)}}}
 function renderSavedLocations(){const d=document.getElementById('savedLocations');if(d)d.innerHTML=(settings.savedLocations||[]).map(x=>`<option value="${esc(x)}"></option>`).join('')}
 const merchantRules=[
- {re:/openai|chatgpt/i,name:'OpenAI / ChatGPT',category:'Software / subscriptions',use:'business'},
- {re:/anthropic|claude ai/i,name:'Claude',category:'Software / subscriptions',use:'business'},
- {re:/spotify/i,name:'Spotify',category:'Software / subscriptions',use:'business'},
- {re:/youtube/i,name:'YouTube',category:'Software / subscriptions',use:'business'},
- {re:/amzn\s*(?:mktp|mktplace|marketplace)|amazon/i,name:'Amazon',category:'Office supplies',use:'business'},
- {re:/wm\s*supercenter|wal[ -]?mart|walmart/i,name:'Walmart',category:'Other expense',use:'personal'},
- {re:/guitar center/i,name:'Guitar Center',category:'Guitar / music supplies',use:'business'},
- {re:/sweetwater/i,name:'Sweetwater',category:'Guitar / music supplies',use:'business'},
- {re:/cloudflare/i,name:'Cloudflare',category:'Software / subscriptions',use:'business'},
- {re:/ionos/i,name:'IONOS',category:'Internet',use:'business'},
- {re:/progressive/i,name:'Progressive Insurance',category:'Auto / mileage',use:'personal'},
- {re:/h-?e-?b|heb grocery/i,name:'H-E-B',category:'Other expense',use:'personal'},
- {re:/kroger/i,name:'Kroger',category:'Other expense',use:'personal'},
- {re:/fiesta mart/i,name:'Fiesta Mart',category:'Other expense',use:'personal'},
- {re:/central market/i,name:'Central Market',category:'Other expense',use:'personal'},
- {re:/costco gas/i,name:'Costco Gas',category:'Auto / mileage',use:'personal'},
- {re:/reliant energy/i,name:'Reliant Energy',category:'Utilities',use:'personal'},
- {re:/shell|exxon|chevron|valero|circle k/i,name:'Fuel',category:'Auto / mileage',use:'business'}
+{re:/openai|chatgpt/i,name:'OpenAI / ChatGPT',category:'Software / subscriptions',use:'business'},
+{re:/anthropic|claude ai/i,name:'Claude',category:'Software / subscriptions',use:'business'},
+{re:/spotify/i,name:'Spotify',category:'Software / subscriptions',use:'business'},
+{re:/youtube/i,name:'YouTube',category:'Software / subscriptions',use:'business'},
+{re:/amzn\s*(?:mktp|mktplace|marketplace)|amazon/i,name:'Amazon',category:'Office supplies',use:'business'},
+{re:/wm\s*supercenter|wal[ -]?mart|walmart/i,name:'Walmart',category:'Other expense',use:'personal'},
+{re:/guitar center/i,name:'Guitar Center',category:'Guitar / music supplies',use:'business'},
+{re:/sweetwater/i,name:'Sweetwater',category:'Guitar / music supplies',use:'business'},
+{re:/cloudflare/i,name:'Cloudflare',category:'Software / subscriptions',use:'business'},
+{re:/ionos/i,name:'IONOS',category:'Internet',use:'business'},
+{re:/progressive/i,name:'Progressive Insurance',category:'Auto / mileage',use:'personal'},
+{re:/h-?e-?b|heb grocery/i,name:'H-E-B',category:'Other expense',use:'personal'},
+{re:/kroger/i,name:'Kroger',category:'Other expense',use:'personal'},
+{re:/fiesta mart/i,name:'Fiesta Mart',category:'Other expense',use:'personal'},
+{re:/central market/i,name:'Central Market',category:'Other expense',use:'personal'},
+{re:/costco gas/i,name:'Costco Gas',category:'Auto / mileage',use:'personal'},
+{re:/reliant energy/i,name:'Reliant Energy',category:'Utilities',use:'personal'},
+{re:/shell|exxon|chevron|valero|circle k/i,name:'Fuel',category:'Auto / mileage',use:'business'}
 ];
 function parseZelle(raw){const m=String(raw||'').replace(/\s+/g,' ').trim().match(/^Zelle (from|to) (.+?) on \d{1,2}\/\d{1,2}(?: Ref #\s*(\S+))?\s*(.*)$/i);if(!m)return null;return{dir:m[1].toLowerCase(),name:m[2].trim(),ref:m[3]||'',memo:(m[4]||'').trim()}}
 function toTitleCase(x){return String(x||'').toLowerCase().replace(/(^|[\s&/.-])([a-z])/g,(m,p,c)=>p+c.toUpperCase()).replace(/\b(Ach|Pos|Usa|Llc)\b/g,m=>m.toUpperCase()).replace(/^Joes\b/,"Joe's").replace(/^Mcdonalds\b/,"McDonald's")}
@@ -440,64 +420,63 @@ function parseBankCandidate(row,map,rowNumber){const raw=map.description>=0?Stri
 function getBankImportSummary(){const valid=bankCandidates.filter(r=>candidateValidationIssues(r).length===0),high=bankCandidates.filter(r=>r.confidence==='High confidence'),review=bankCandidates.filter(r=>r.requiresReview),unknown=bankCandidates.filter(r=>r.unknownMerchant),definite=bankCandidates.filter(r=>r.duplicateStatus==='definite'),possible=bankCandidates.filter(r=>r.duplicateStatus==='possible'),ready=bankCandidates.filter(r=>r.selected&&r.duplicateStatus!=='definite'&&candidateValidationIssues(r).length===0);return{total:bankImportMeta.totalRowsFound,valid:valid.length,high:high.length,review:review.length,unknown:unknown.length,definite:definite.length,possible:possible.length,ready:ready.length,failed:bankImportMeta.failedRows+bankCandidates.filter(r=>candidateValidationIssues(r).length>0).length,ignored:bankImportMeta.ignoredRows}}
 function summaryStat(label,value,cls=''){return`<div class="import-stat"><small>${esc(label)}</small><strong class="${cls}">${Number(value)||0}</strong></div>`}
 function renderBankImportSummary(){const s=getBankImportSummary(),box=document.getElementById('bankImportSummary');if(!box)return;box.innerHTML=summaryStat('Total rows found',s.total)+summaryStat('Valid transactions',s.valid)+summaryStat('High confidence',s.high,'green')+summaryStat('Need review',s.review,'gold')+summaryStat('Unknown merchants',s.unknown)+summaryStat('Definite duplicates skipped',s.definite,'red')+summaryStat('Possible duplicates',s.possible,'gold')+summaryStat('Ready to import',s.ready,'green')+summaryStat('Failed or ignored',s.failed+s.ignored,'red')}
-
 const PDFJS_VERSION='5.7.284';
 let pdfJsPromise=null;
 async function getPdfJsLibrary(){
- if(window.pdfjsLib?.getDocument)return window.pdfjsLib;
- if(!pdfJsPromise){
-  pdfJsPromise=(async()=>{
-   const sources=[
-    {main:`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.min.mjs`,worker:`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.worker.min.mjs`},
-    {main:`https://unpkg.com/pdfjs-dist@${PDFJS_VERSION}/build/pdf.min.mjs`,worker:`https://unpkg.com/pdfjs-dist@${PDFJS_VERSION}/build/pdf.worker.min.mjs`}
-   ];
-   let lastError=null;
-   for(const source of sources){
-    try{const lib=await import(source.main);lib.GlobalWorkerOptions.workerSrc=source.worker;window.pdfjsLib=lib;return lib}catch(e){lastError=e}
-   }
-   throw new Error('The local PDF reader could not load. Check the internet connection once, then choose the statement again.'+(lastError?.message?` (${lastError.message})`:''));
-  })();
- }
- try{return await pdfJsPromise}catch(e){pdfJsPromise=null;throw e}
+if(window.pdfjsLib?.getDocument)return window.pdfjsLib;
+if(!pdfJsPromise){
+pdfJsPromise=(async()=>{
+const sources=[
+{main:`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.min.mjs`,worker:`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.worker.min.mjs`},
+{main:`https://unpkg.com/pdfjs-dist@${PDFJS_VERSION}/build/pdf.min.mjs`,worker:`https://unpkg.com/pdfjs-dist@${PDFJS_VERSION}/build/pdf.worker.min.mjs`}
+];
+let lastError=null;
+for(const source of sources){
+try{const lib=await import(source.main);lib.GlobalWorkerOptions.workerSrc=source.worker;window.pdfjsLib=lib;return lib}catch(e){lastError=e}
+}
+throw new Error('The local PDF reader could not load. Check the internet connection once, then choose the statement again.'+(lastError?.message?` (${lastError.message})`:''));
+})();
+}
+try{return await pdfJsPromise}catch(e){pdfJsPromise=null;throw e}
 }
 function groupPdfTextLines(items,pageHeight){
- const words=(items||[]).filter(i=>String(i.str||'').trim()).map(i=>({text:String(i.str).replace(/\s+/g,' ').trim(),x:Number(i.transform?.[4]||0),y:Number(pageHeight)-Number(i.transform?.[5]||0),width:Number(i.width||0)})).sort((a,b)=>a.y-b.y||a.x-b.x),lines=[];
- for(const word of words){let line=lines[lines.length-1];if(!line||Math.abs(line.y-word.y)>2.8){line={y:word.y,items:[]};lines.push(line)}line.items.push(word);line.y=(line.y*(line.items.length-1)+word.y)/line.items.length}
- for(const line of lines){line.items.sort((a,b)=>a.x-b.x);line.text=line.items.map(i=>i.text).join(' ').replace(/\s+/g,' ').trim()}
- return lines;
+const words=(items||[]).filter(i=>String(i.str||'').trim()).map(i=>({text:String(i.str).replace(/\s+/g,' ').trim(),x:Number(i.transform?.[4]||0),y:Number(pageHeight)-Number(i.transform?.[5]||0),width:Number(i.width||0)})).sort((a,b)=>a.y-b.y||a.x-b.x),lines=[];
+for(const word of words){let line=lines[lines.length-1];if(!line||Math.abs(line.y-word.y)>2.8){line={y:word.y,items:[]};lines.push(line)}line.items.push(word);line.y=(line.y*(line.items.length-1)+word.y)/line.items.length}
+for(const line of lines){line.items.sort((a,b)=>a.x-b.x);line.text=line.items.map(i=>i.text).join(' ').replace(/\s+/g,' ').trim()}
+return lines;
 }
 function findWellsFargoStatementDate(pages){
- const text=pages.map(p=>p.lines.map(l=>l.text).join(' ')).join(' '),m=text.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s*(\d{4})\b/i);
- if(!m)return null;const d=new Date(`${m[1]} ${m[2]}, ${m[3]} 12:00:00`);return isNaN(d)?null:d;
+const text=pages.map(p=>p.lines.map(l=>l.text).join(' ')).join(' '),m=text.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s*(\d{4})\b/i);
+if(!m)return null;const d=new Date(`${m[1]} ${m[2]}, ${m[3]} 12:00:00`);return isNaN(d)?null:d;
 }
 function pdfShortDateToYmd(value,statementDate){
- const m=String(value||'').trim().match(/^(\d{1,2})\/(\d{1,2})$/);if(!m||!statementDate)return null;const month=Number(m[1]),day=Number(m[2]);let year=statementDate.getFullYear(),endMonth=statementDate.getMonth()+1;if(month-endMonth>6)year--;return validYMD(year,month,day)?`${year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`:null;
+const m=String(value||'').trim().match(/^(\d{1,2})\/(\d{1,2})$/);if(!m||!statementDate)return null;const month=Number(m[1]),day=Number(m[2]);let year=statementDate.getFullYear(),endMonth=statementDate.getMonth()+1;if(month-endMonth>6)year--;return validYMD(year,month,day)?`${year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`:null;
 }
 function isPdfMoneyToken(text){return /^-?\$?\d+(?:,\d{3})*(?:\.\d{2})$|^\(\$?\d+(?:,\d{3})*(?:\.\d{2})\)$/.test(String(text||'').replace(/\s+/g,''))}
 function parseWellsFargoPdfTransactions(pages){
- const statementDate=findWellsFargoStatementDate(pages);if(!statementDate)throw new Error('The Wells Fargo statement date could not be identified.');const transactions=[];let ignoredRows=0;
- for(const page of pages){const pageText=page.lines.map(l=>l.text).join(' ');if(!/Transaction\s+History|Transaction\s+history/i.test(pageText))continue;const w=page.width||612,descStart=w*.205,depositStart=w*.62,withdrawStart=w*.735,balanceStart=w*.86;let current=null,rowIndex=0;
-  const finish=()=>{if(!current)return;current.description=current.descriptionParts.join(' ').replace(/\s+/g,' ').trim();delete current.descriptionParts;transactions.push(current);current=null};
-  for(const line of page.lines){if(/^Totals\b/i.test(line.text)||/^The Ending Daily Balance\b/i.test(line.text)){finish();break}const dateItem=line.items.find(i=>i.x<w*.20&&/^\d{1,2}\/\d{1,2}$/.test(i.text));if(dateItem){finish();rowIndex++;current={date:pdfShortDateToYmd(dateItem.text,statementDate)||'',descriptionParts:[],deposit:null,withdrawal:null,balance:null,pageNumber:page.pageNumber,rowIndex,sourceLabel:`PDF page ${page.pageNumber}, transaction ${rowIndex}`}}if(!current)continue;
-   const description=line.items.filter(i=>i.x>=descStart&&i.x<depositStart&&!/^Check$|^Number$/i.test(i.text)).map(i=>i.text).join(' ').trim();if(description&&!/^(?:Description|Deposits\/|Additions|Withdrawals\/|Subtractions|Ending|daily|balance)$/i.test(description))current.descriptionParts.push(description);
-   for(const item of line.items){if(!isPdfMoneyToken(item.text))continue;const value=parseMoneyValue(item.text);if(value==null)continue;if(item.x>=balanceStart)current.balance=value;else if(item.x>=withdrawStart)current.withdrawal=Math.abs(value);else if(item.x>=depositStart)current.deposit=Math.abs(value)}
-  }
-  finish();
- }
- if(!transactions.length)throw new Error('No printed Wells Fargo transaction rows were found. Image-only or scanned statements are not supported.');
- return{transactions,ignoredRows,statementDate:statementDate.toISOString().slice(0,10)};
+const statementDate=findWellsFargoStatementDate(pages);if(!statementDate)throw new Error('The Wells Fargo statement date could not be identified.');const transactions=[];let ignoredRows=0;
+for(const page of pages){const pageText=page.lines.map(l=>l.text).join(' ');if(!/Transaction\s+History|Transaction\s+history/i.test(pageText))continue;const w=page.width||612,descStart=w*.205,depositStart=w*.62,withdrawStart=w*.735,balanceStart=w*.86;let current=null,rowIndex=0;
+const finish=()=>{if(!current)return;current.description=current.descriptionParts.join(' ').replace(/\s+/g,' ').trim();delete current.descriptionParts;transactions.push(current);current=null};
+for(const line of page.lines){if(/^Totals\b/i.test(line.text)||/^The Ending Daily Balance\b/i.test(line.text)){finish();break}const dateItem=line.items.find(i=>i.x<w*.20&&/^\d{1,2}\/\d{1,2}$/.test(i.text));if(dateItem){finish();rowIndex++;current={date:pdfShortDateToYmd(dateItem.text,statementDate)||'',descriptionParts:[],deposit:null,withdrawal:null,balance:null,pageNumber:page.pageNumber,rowIndex,sourceLabel:`PDF page ${page.pageNumber}, transaction ${rowIndex}`}}if(!current)continue;
+const description=line.items.filter(i=>i.x>=descStart&&i.x<depositStart&&!/^Check$|^Number$/i.test(i.text)).map(i=>i.text).join(' ').trim();if(description&&!/^(?:Description|Deposits\/|Additions|Withdrawals\/|Subtractions|Ending|daily|balance)$/i.test(description))current.descriptionParts.push(description);
+for(const item of line.items){if(!isPdfMoneyToken(item.text))continue;const value=parseMoneyValue(item.text);if(value==null)continue;if(item.x>=balanceStart)current.balance=value;else if(item.x>=withdrawStart)current.withdrawal=Math.abs(value);else if(item.x>=depositStart)current.deposit=Math.abs(value)}
+}
+finish();
+}
+if(!transactions.length)throw new Error('No printed Wells Fargo transaction rows were found. Image-only or scanned statements are not supported.');
+return{transactions,ignoredRows,statementDate:statementDate.toISOString().slice(0,10)};
 }
 function bankCandidateSource(r){return r.sourceLabel||`CSV row ${r.sourceRow}`}
 async function loadBankPDF(file){
- document.getElementById('bankStatus').textContent='Opening PDF and reading the printed Wells Fargo transaction columns…';const pdfjs=await getPdfJsLibrary(),data=new Uint8Array(await file.arrayBuffer()),pdf=await pdfjs.getDocument({data}).promise,pages=[];
- for(let pageNumber=1;pageNumber<=pdf.numPages;pageNumber++){document.getElementById('bankStatus').textContent=`Reading PDF page ${pageNumber} of ${pdf.numPages}…`;const page=await pdf.getPage(pageNumber),viewport=page.getViewport({scale:1}),content=await page.getTextContent();pages.push({pageNumber,width:viewport.width,height:viewport.height,lines:groupPdfTextLines(content.items,viewport.height)})}
- const parsed=parseWellsFargoPdfTransactions(pages);bankCandidates=[];bankShowAll=false;bankImportMeta={totalRowsFound:parsed.transactions.length,ignoredRows:parsed.ignoredRows,failedRows:0,layout:'Wells Fargo PDF statement',imported:0};
- const map={date:0,description:1,credit:2,debit:3,balance:4,type:-1,owner:-1,category:-1,use:-1,notes:-1,amount:-1};
- for(const tx of parsed.transactions){const candidate=parseBankCandidate([tx.date,tx.description,tx.deposit,tx.withdrawal,tx.balance],map,`${tx.pageNumber}-${tx.rowIndex}`);candidate.sourceLabel=tx.sourceLabel;candidate.sourcePage=tx.pageNumber;candidate.importSource='bank-pdf';candidate.statementDate=parsed.statementDate;candidate.sourceFileName=file.name;candidate.notes='Imported from Wells Fargo PDF statement';bankCandidates.push(candidate)}
- evaluateBankCandidates();renderBankReview();document.getElementById('bankStatus').textContent=`Smart Import found ${bankCandidates.length} transaction${bankCandidates.length===1?'':'s'} in the Wells Fargo PDF. Known high-confidence rows are ready automatically; only exceptions are shown below.`;
+document.getElementById('bankStatus').textContent='Opening PDF and reading the printed Wells Fargo transaction columns…';const pdfjs=await getPdfJsLibrary(),data=new Uint8Array(await file.arrayBuffer()),pdf=await pdfjs.getDocument({data}).promise,pages=[];
+for(let pageNumber=1;pageNumber<=pdf.numPages;pageNumber++){document.getElementById('bankStatus').textContent=`Reading PDF page ${pageNumber} of ${pdf.numPages}…`;const page=await pdf.getPage(pageNumber),viewport=page.getViewport({scale:1}),content=await page.getTextContent();pages.push({pageNumber,width:viewport.width,height:viewport.height,lines:groupPdfTextLines(content.items,viewport.height)})}
+const parsed=parseWellsFargoPdfTransactions(pages);bankCandidates=[];bankShowAll=false;bankImportMeta={totalRowsFound:parsed.transactions.length,ignoredRows:parsed.ignoredRows,failedRows:0,layout:'Wells Fargo PDF statement',imported:0};
+const map={date:0,description:1,credit:2,debit:3,balance:4,type:-1,owner:-1,category:-1,use:-1,notes:-1,amount:-1};
+for(const tx of parsed.transactions){const candidate=parseBankCandidate([tx.date,tx.description,tx.deposit,tx.withdrawal,tx.balance],map,`${tx.pageNumber}-${tx.rowIndex}`);candidate.sourceLabel=tx.sourceLabel;candidate.sourcePage=tx.pageNumber;candidate.importSource='bank-pdf';candidate.statementDate=parsed.statementDate;candidate.sourceFileName=file.name;candidate.notes='Imported from Wells Fargo PDF statement';bankCandidates.push(candidate)}
+evaluateBankCandidates();renderBankReview();document.getElementById('bankStatus').textContent=`Smart Import found ${bankCandidates.length} transaction${bankCandidates.length===1?'':'s'} in the Wells Fargo PDF. Known high-confidence rows are ready automatically; only exceptions are shown below.`;
 }
 async function loadBankFile(ev){
- const file=ev.target.files[0];if(!file)return;try{const isPdf=file.type==='application/pdf'||/\.pdf$/i.test(file.name);if(isPdf)await loadBankPDF(file);else await loadBankCSV(ev)}catch(e){bankCandidates=[];document.getElementById('bankReview').style.display='none';document.getElementById('bankStatus').textContent='Import problem: '+e.message}finally{ev.target.value=''}
+const file=ev.target.files[0];if(!file)return;try{const isPdf=file.type==='application/pdf'||/\.pdf$/i.test(file.name);if(isPdf)await loadBankPDF(file);else await loadBankCSV(ev)}catch(e){bankCandidates=[];document.getElementById('bankReview').style.display='none';document.getElementById('bankStatus').textContent='Import problem: '+e.message}finally{ev.target.value=''}
 }
 async function loadBankCSV(ev){const file=ev.target.files[0];if(!file)return;try{const rows=parseCSV(await file.text());if(!rows.length)throw new Error('No transaction rows were found in this file.');const layout=detectBankLayout(rows);if(!layout)throw new Error('I could not identify the Date, Description, and Amount columns. Wells Fargo files with or without a header are supported.');bankCandidates=[];bankShowAll=false;bankImportMeta={totalRowsFound:Math.max(0,rows.length-layout.dataStart),ignoredRows:0,failedRows:0,layout:layout.layout,imported:0};for(let i=layout.dataStart;i<rows.length;i++){const row=rows[i];if(isIrrelevantBankRow(row,layout.map)){bankImportMeta.ignoredRows++;continue}const candidate=parseBankCandidate(row,layout.map,i+1),meaningful=String(candidate.rawDescription||'').trim()||candidate.date||candidate.amount;if(!meaningful){bankImportMeta.ignoredRows++;continue}bankCandidates.push(candidate)}if(!bankCandidates.length)throw new Error('No usable transaction rows were found after the header.');evaluateBankCandidates();renderBankReview();document.getElementById('bankStatus').textContent=`Smart Import found ${bankCandidates.length} transaction${bankCandidates.length===1?'':'s'} using ${layout.layout}. Known high-confidence rows are ready automatically; only exceptions are shown below.`}catch(e){bankCandidates=[];document.getElementById('bankReview').style.display='none';document.getElementById('bankStatus').textContent='Import problem: '+e.message}finally{ev.target.value=''}}
 function confidenceClass(r){return r.confidence==='High confidence'?'confidence-high':r.confidence==='Unknown'?'confidence-unknown':'confidence-review'}
